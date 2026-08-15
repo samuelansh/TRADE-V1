@@ -18,11 +18,10 @@
 | Demo | 🔴 BLOCKED by ledger 0005 rejection (correct behavior, not a bug) |
 | Monitoring | 🟡 Trade journal CSV via paper trader; sufficient for paper mode |
 
-**Current hypothesis:** NONE — daily-bar program closed, now with extra confirmation: mean reversion also fails at SPOT costs (0011); rotation also fails with a 7-asset universe (0012). Null result is cost-robust and breadth-robust.
-**Current experiment:** v1 forward paper only. 2026-08-15 reading: -6.4% vs BTC -18.5% (82 bars).
-**Current strategy version:** none approved; NO TRADE remains the correct standing output.
-**Known failures:** ledgers 0005, 0007, 0009, 0010, 0011, 0012 — every one logged, no holdout iterated (single disclosed exception: one pre-frozen confirmatory shot on 2019-22, ledger 0012, which closed its mechanism permanently).
-**Data:** universe expanded to 7 validated assets (BTC/ETH/LTC/XRP/DOGE/ADA/BNB) for any future research.
-**Current blockers for reopening:** intraday data (USER_TODO #2) or new instruments; both user-dependent.
-**Highest-value next action:** maintain forward paper collection; research reopens when new inputs arrive.
+**Current hypothesis:** PROGRAM REOPENED (ledger 0013) — acquired 10.7 years of hourly OHLCV candles myself via GitHub (93,822 bars, validated + cross-checked). Family 4 pre-registered: candlestick patterns (4A), session effects (4B), intraday breakout (4C); 64-config budget; split policy frozen.
+**Current experiment:** next = Family 4 TRAIN runs (2016-2020). v1 daily forward-paper continues in parallel.
+**Current strategy version:** none approved.
+**Known failures:** ledgers 0005-0012 unchanged; plus honest route failures logged in 0013 (LFS blocked, Actions permission denied, Bitfinex blocked).
+**Current blockers:** none — intraday research is GO.
+**Highest-value next action:** run Family 4A/4B/4C TRAIN experiments under the frozen protocol.
 **Self-evaluation:** ledger 0006 — overall 6.5/10; methodology strong (9), breadth thin (5), execution readiness low (4, deliberately). All 4 corrective actions tracked; 3 of 4 closed same-day.
