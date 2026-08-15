@@ -23,5 +23,5 @@
 **Current strategy version:** none approved.
 **Known failures:** ledgers 0005-0015. Null result now spans daily AND hourly bars, 4 mechanism classes, 2 cost structures, 7 assets.
 **Current blockers:** a validated funding-carry pipeline needs multi-year funding history (not yet acquirable); everything else exhausted or closed.
-**Highest-value next action (Research Director):** research phase pauses — Path B (guardian/discipline bot engineering, ledger 0014) is the recommended build target; optional small descriptive funding-carry study with the 1yr data as groundwork for a future family.
+**Highest-value next action:** OWNER DECISION 2026-08-15: guardian bot (Path B) rejected by owner — struck from the plan. Remaining live options: funding-carry study (1yr data, descriptive), forward-paper accumulation, or new inputs from owner.
 **Self-evaluation:** ledger 0006 — overall 6.5/10; methodology strong (9), breadth thin (5), execution readiness low (4, deliberately). All 4 corrective actions tracked; 3 of 4 closed same-day.
