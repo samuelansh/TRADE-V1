@@ -19,9 +19,9 @@
 | Monitoring | 🟡 Trade journal CSV via paper trader; sufficient for paper mode |
 
 **Current hypothesis:** none surviving. Family 4 (intraday: candle patterns 4A, sessions 4B, breakout 4C) REJECTED AT TRAIN — 0/40 configs (ledger 0015). The candlestick question is now answered with evidence: no edge after costs, 93,822 bars, thousands of pattern instances.
-**Current experiment:** v1 forward paper (neutral reporting). Funding-rate data route verified (~1yr hourly, Kraken Futures) — sufficient for descriptive study only, not a validated pipeline.
+**Current experiment:** v1 forward paper (neutral reporting). Funding-carry study COMPLETE (ledger 0016): mechanism REAL (+6.3%/yr gross, 77% positive hours) but NO-GO — nets ~+5.2%/yr vs the pre-registered 8% bar. Correctly priced, not exploitable at current levels.
 **Current strategy version:** none approved.
-**Known failures:** ledgers 0005-0015. Null result now spans daily AND hourly bars, 4 mechanism classes, 2 cost structures, 7 assets.
-**Current blockers:** a validated funding-carry pipeline needs multi-year funding history (not yet acquirable); everything else exhausted or closed.
-**Highest-value next action:** OWNER DECISION 2026-08-15: guardian bot (Path B) rejected by owner — struck from the plan. Remaining live options: funding-carry study (1yr data, descriptive), forward-paper accumulation, or new inputs from owner.
+**Known failures/closures:** ledgers 0005-0016. Seven mechanism families tested end-to-end (trend, mean reversion ×2 cost regimes, rotation ×2 universes, candlesticks, sessions, breakouts, funding carry), zero survivors, all pre-registered.
+**Current blockers:** research exhausted within reachable data/mechanisms. Reopens on: sustained funding spike >15-20%/yr (one API call to check), new user data, or new instruments.
+**Highest-value next action:** owner's call. (Guardian bot rejected by owner 2026-08-15.) Machine idles honestly rather than mining noise.
 **Self-evaluation:** ledger 0006 — overall 6.5/10; methodology strong (9), breadth thin (5), execution readiness low (4, deliberately). All 4 corrective actions tracked; 3 of 4 closed same-day.
