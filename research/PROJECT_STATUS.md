@@ -18,10 +18,10 @@
 | Demo | 🔴 BLOCKED by ledger 0005 rejection (correct behavior, not a bug) |
 | Monitoring | 🟡 Trade journal CSV via paper trader; sufficient for paper mode |
 
-**Current hypothesis:** none active. Family 1 (trend) rejected at TEST (0005); **family 2 (mean reversion) rejected at TRAIN (0009): 0/52 configs survive stressed costs+financing** — validation/test budgets preserved.
-**Current experiment:** v1 forward paper collection continues (0008): -6.4% vs BTC -18.5% since 2026-05-25.
-**Current strategy version:** none approved. v1 paper-only.
-**Known failures:** SOL dataset; validator null bug (fixed); F1 TEST FAIL (0005/0007); F2 TRAIN FAIL (0009).
-**Current blockers:** intraday mechanisms need bulk data from user (USER_TODO #2); everything else unblocked.
-**Highest-value next action:** family 3 candidate = cross-sectional BTC/ETH/LTC relative-strength rotation (last untested mechanism family feasible with current data). Honest alternative if it fails: accept the null — daily bars + retail costs may hold no deployable edge, and reporting that is a valid project outcome.
+**Current hypothesis:** NONE — research program on daily-bar crypto CLOSED with a formal null result (ledger 0010): 3 mechanism families falsified under pre-registered protocols (trend @TEST, mean-reversion @TRAIN, rotation @VALIDATION).
+**Current experiment:** v1 forward paper trading only (zero risk, ledger 0008).
+**Current strategy version:** none approved. NO TRADE is the standing output, and it is correct.
+**Known failures:** all logged — ledgers 0005, 0007, 0009, 0010. No holdout was ever iterated.
+**Current blockers for reopening research:** new inputs required — intraday data (USER_TODO #2), or spot-exchange cost structure, or new asset classes. Without them, further daily-bar mining would be data dredging.
+**Highest-value next action:** (user-dependent) provide intraday data or broker specs to open the intraday program; (autonomous) periodic forward-paper updates via Kraken route.
 **Self-evaluation:** ledger 0006 — overall 6.5/10; methodology strong (9), breadth thin (5), execution readiness low (4, deliberately). All 4 corrective actions tracked; 3 of 4 closed same-day.
