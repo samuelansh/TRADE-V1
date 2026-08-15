@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15T05:50:19.677718",
+  "generated": "2026-08-15T06:27:06.360763",
   "datasets": [
     {
       "file": "btc.csv",
@@ -66,28 +66,6 @@
       "null_price_ratio": 0.0002,
       "priced_rows": 4801,
       "status": "OK"
-    },
-    {
-      "file": "sol.csv",
-      "source": "coinmetrics/data@f1a36af",
-      "rows": 2235,
-      "sha256": "dd07271f4be3451b",
-      "bad_timestamps": 0,
-      "start": "2020-04-11",
-      "end": "2026-05-24",
-      "duplicates": 0,
-      "monotonic": true,
-      "price_col": "ReferenceRateUSD",
-      "leading_null_prices_trimmed": 2228,
-      "priced_start": "2026-05-18",
-      "interior_null_or_nonpositive": 0,
-      "gaps_gt_1d": 0,
-      "max_gap_days": 1,
-      "abs_return_gt_50pct": 0,
-      "max_abs_return": 0.0302,
-      "null_price_ratio": 0.0,
-      "priced_rows": 7,
-      "status": "FAIL"
     },
     {
       "file": "gold_monthly.csv",

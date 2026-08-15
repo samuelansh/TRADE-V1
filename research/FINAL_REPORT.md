@@ -24,6 +24,12 @@ Under the governance package (Master Prompt + auditors), three strategy families
 - Untouched holdouts for any future family: ETH 2023-26, portfolio-level 2023-26.
 - v1 forward paper experiment running (post-TEST bars only): currently -6.4% vs BTC -18.5%.
 
+## Addendum (2026-08-15, same day): two reopening conditions already tested
+- **Spot costs (family 2R, ledger 0011):** mean reversion re-priced at 10 and 26 bps/side, zero financing — still 0/52 configs pass (best Sharpe 0.78, lone cell). The mechanism is weak, not cost-starved. Condition CLOSED.
+- **Wider universe (family 3B, ledger 0012):** rotation re-tested with 7 validated assets (added XRP/DOGE/ADA/BNB), one pre-frozen confirmatory config, raised bar — Sharpe 0.14 vs 0.94 passive. Breadth made it worse. Mechanism CLOSED permanently.
+
+The null result is therefore robust to both cost structure and universe breadth. Remaining reopening conditions: intraday data, fundamentally new instruments, accumulated forward evidence.
+
 ## What would reopen research
 1. **Intraday data** (user-provided bulk download) → microstructure/session mechanism space.
 2. **Spot-exchange cost structure** (~10 bps) → family 2 becomes re-testable; needs exchange API access or user-run execution.

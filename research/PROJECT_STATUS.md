@@ -18,10 +18,11 @@
 | Demo | 🔴 BLOCKED by ledger 0005 rejection (correct behavior, not a bug) |
 | Monitoring | 🟡 Trade journal CSV via paper trader; sufficient for paper mode |
 
-**Current hypothesis:** NONE — research program on daily-bar crypto CLOSED with a formal null result (ledger 0010): 3 mechanism families falsified under pre-registered protocols (trend @TEST, mean-reversion @TRAIN, rotation @VALIDATION).
-**Current experiment:** v1 forward paper trading only (zero risk, ledger 0008).
-**Current strategy version:** none approved. NO TRADE is the standing output, and it is correct.
-**Known failures:** all logged — ledgers 0005, 0007, 0009, 0010. No holdout was ever iterated.
-**Current blockers for reopening research:** new inputs required — intraday data (USER_TODO #2), or spot-exchange cost structure, or new asset classes. Without them, further daily-bar mining would be data dredging.
-**Highest-value next action:** (user-dependent) provide intraday data or broker specs to open the intraday program; (autonomous) periodic forward-paper updates via Kraken route.
+**Current hypothesis:** NONE — daily-bar program closed, now with extra confirmation: mean reversion also fails at SPOT costs (0011); rotation also fails with a 7-asset universe (0012). Null result is cost-robust and breadth-robust.
+**Current experiment:** v1 forward paper only. 2026-08-15 reading: -6.4% vs BTC -18.5% (82 bars).
+**Current strategy version:** none approved; NO TRADE remains the correct standing output.
+**Known failures:** ledgers 0005, 0007, 0009, 0010, 0011, 0012 — every one logged, no holdout iterated (single disclosed exception: one pre-frozen confirmatory shot on 2019-22, ledger 0012, which closed its mechanism permanently).
+**Data:** universe expanded to 7 validated assets (BTC/ETH/LTC/XRP/DOGE/ADA/BNB) for any future research.
+**Current blockers for reopening:** intraday data (USER_TODO #2) or new instruments; both user-dependent.
+**Highest-value next action:** maintain forward paper collection; research reopens when new inputs arrive.
 **Self-evaluation:** ledger 0006 — overall 6.5/10; methodology strong (9), breadth thin (5), execution readiness low (4, deliberately). All 4 corrective actions tracked; 3 of 4 closed same-day.
