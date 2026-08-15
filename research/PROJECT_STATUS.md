@@ -18,9 +18,10 @@
 | Demo | 🔴 BLOCKED by ledger 0005 rejection (correct behavior, not a bug) |
 | Monitoring | 🟡 Trade journal CSV via paper trader; sufficient for paper mode |
 
-**Current hypothesis:** none active. H1+H2 family rejected at TEST (ledger 0005) despite passing pre-registered VALIDATION (ledger 0004) — regime-dependent edge, decayed post-2022.
-**Current experiment:** none. Research Director options listed in ledger 0005 §Decision.
-**Current strategy version:** v1 REJECTED for deployment. Software stack (backtester+strategy interface+risk engine+paper trader, 13 tests passing) retained, strategy-agnostic.
-**Known failures:** SOL dataset (nulls); validator null-check bug (fixed); **candidate v1 failed locked TEST — recorded, not hidden, not tuned around**.
-**Current blockers:** none for research; MT5 items (`USER_TODO.md`) moot until a strategy survives a full pipeline.
-**Highest-value next action (Research Director):** start forward paper trading of v1 via Kraken route (free out-of-sample evidence, zero risk) while pre-registering the next hypothesis family (mean-reversion/regime filters) with ETH as the untouched test market under a new split policy.
+**Current hypothesis:** none active in research; v1 running in FORWARD PAPER mode (ledger 0008): -6.4% vs BTC -18.5% since 2026-05-25 — favorable regime for it, one quarter only, not evidence of edge.
+**Current experiment:** forward paper collection (re-run `update_pipeline.py` + `paper_forward.py` on new data).
+**Current strategy version:** v1 REJECTED for deployment; alive only as a zero-risk paper experiment.
+**Known failures:** SOL dataset; validator null bug (fixed); v1 TEST FAIL (ledger 0005) — post-mortem (0007): no timing skill left (signal-fwd corr ≈ 0), FAIL statistically fair (P(strat better)=32%), vol-target tail benefit also regime-dependent.
+**Current blockers:** none; MT5 items moot until something survives.
+**Highest-value next action:** pre-register family 2 (mean-reversion/regime mechanisms, H4 lineage): BTC TRAIN/VAL, ETH untouched test market, financing-cost stress included.
+**Self-evaluation:** ledger 0006 — overall 6.5/10; methodology strong (9), breadth thin (5), execution readiness low (4, deliberately). All 4 corrective actions tracked; 3 of 4 closed same-day.
