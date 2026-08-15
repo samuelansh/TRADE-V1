@@ -18,10 +18,10 @@
 | Demo | 🔴 BLOCKED by ledger 0005 rejection (correct behavior, not a bug) |
 | Monitoring | 🟡 Trade journal CSV via paper trader; sufficient for paper mode |
 
-**Current hypothesis:** PROGRAM REOPENED (ledger 0013) — acquired 10.7 years of hourly OHLCV candles myself via GitHub (93,822 bars, validated + cross-checked). Family 4 pre-registered: candlestick patterns (4A), session effects (4B), intraday breakout (4C); 64-config budget; split policy frozen.
-**Current experiment:** next = Family 4 TRAIN runs (2016-2020). v1 daily forward-paper continues in parallel.
+**Current hypothesis:** none surviving. Family 4 (intraday: candle patterns 4A, sessions 4B, breakout 4C) REJECTED AT TRAIN — 0/40 configs (ledger 0015). The candlestick question is now answered with evidence: no edge after costs, 93,822 bars, thousands of pattern instances.
+**Current experiment:** v1 forward paper (neutral reporting). Funding-rate data route verified (~1yr hourly, Kraken Futures) — sufficient for descriptive study only, not a validated pipeline.
 **Current strategy version:** none approved.
-**Known failures:** ledgers 0005-0012 unchanged; plus honest route failures logged in 0013 (LFS blocked, Actions permission denied, Bitfinex blocked).
-**Current blockers:** none — intraday research is GO.
-**Highest-value next action:** run Family 4A/4B/4C TRAIN experiments under the frozen protocol.
+**Known failures:** ledgers 0005-0015. Null result now spans daily AND hourly bars, 4 mechanism classes, 2 cost structures, 7 assets.
+**Current blockers:** a validated funding-carry pipeline needs multi-year funding history (not yet acquirable); everything else exhausted or closed.
+**Highest-value next action (Research Director):** research phase pauses — Path B (guardian/discipline bot engineering, ledger 0014) is the recommended build target; optional small descriptive funding-carry study with the 1yr data as groundwork for a future family.
 **Self-evaluation:** ledger 0006 — overall 6.5/10; methodology strong (9), breadth thin (5), execution readiness low (4, deliberately). All 4 corrective actions tracked; 3 of 4 closed same-day.
