@@ -30,9 +30,12 @@ class Result:
 
 
 def run(close: pd.Series, target_weight: pd.Series, cost_bps_per_side: float,
-        periods_per_year: int = 365) -> Result:
+        periods_per_year: int = 365,
+        financing_annual: float = 0.0) -> Result:
     """close: price series. target_weight: desired exposure decided at each
-    close (will be applied at the NEXT close). Both indexed identically."""
+    close (will be applied at the NEXT close). Both indexed identically.
+    financing_annual: overnight financing on held notional (e.g. 0.10 = 10%/yr
+    long-CFD financing), charged daily on the held weight."""
     close = close.astype(float)
     ret = close.pct_change().fillna(0.0)
 
@@ -42,6 +45,7 @@ def run(close: pd.Series, target_weight: pd.Series, cost_bps_per_side: float,
     # position changes happen at the close where the new target takes effect
     dw = w_held.diff().abs().fillna(w_held.iloc[0] if len(w_held) else 0.0)
     cost = dw * (cost_bps_per_side / 1e4)
+    cost = cost + w_held * (financing_annual / periods_per_year)
 
     strat_ret = w_held * ret - cost
     equity = (1.0 + strat_ret).cumprod()
