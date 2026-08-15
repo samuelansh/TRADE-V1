@@ -1,0 +1,9 @@
+,cfd_stress_strategy,cfd_stress_buy_hold,cfd_stress_bh_voltarget,cfd_base_strategy,cfd_base_buy_hold,cfd_base_bh_voltarget
+ann_return,0.3664,0.5696,0.5629,0.4019,0.5696,0.5663
+ann_vol,0.3499,0.4692,0.4587,0.35,0.4692,0.4587
+sharpe,1.047,1.214,1.227,1.148,1.214,1.235
+sortino,1.529,1.903,1.917,1.674,1.903,1.929
+max_drawdown,-0.265,-0.4913,-0.4913,-0.2435,-0.4913,-0.4913
+n_days,1238.0,1238.0,1238.0,1238.0,1238.0,1238.0
+exposure_frac,0.926,1.0,1.0,0.926,1.0,1.0
+total_return,1.8827,3.6138,3.5475,2.1451,3.6138,3.5816

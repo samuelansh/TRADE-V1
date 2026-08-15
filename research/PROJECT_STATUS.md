@@ -5,22 +5,22 @@
 | Component | State |
 |---|---|
 | Environment | ✅ Audited (see `BOOT_01_ENVIRONMENT_AUDIT.md`) — Linux sandbox, Python 3.11, 2 CPU / 3.8 GB RAM |
-| Skills | ✅ Loaded: Master Prompt + Research Router. Phase = DISCOVERY → active skills: Research Director, Source Verification, Data Integrity, Strategy Research. All other auditors NOT ACTIVE yet (router anti-rigidity rule). |
+| Skills | ✅ Master Prompt + Router. Phase history: DISCOVERY → BASELINE → VALIDATION → EXECUTION-safety → FINAL REVIEW (TEST). Auditors used per phase: Backtest, Overfitting/Multiple-Testing, Statistical Evidence, Red Team, Execution Safety, Self-Evaluation. |
 | Tools | ✅ Git/GitHub, PyPI, page-fetch (Kraken data route). ❌ No broker, no MT5 terminal here. |
 | Data | ✅ Acquired + validated (BTC 15.8y, ETH 10.8y, LTC 13.1y daily; gold/S&P monthly). SOL REJECTED (99.7% nulls). Manifest with hashes: `data/MANIFEST.json`. Kraken live-update route verified. |
 | Markets | ✅ Ranked (`research/MARKET_DISCOVERY.md`): BTC/USD primary, ETH/USD generalization check, LTC held out, gold/S&P context only |
-| Strategies | 🟢 H1+H2 ensemble PASSED pre-registered VALIDATION (ledger 0004): BTC Sharpe 0.94 vs B&H 0.62, MaxDD -50% vs -77% @ stressed costs; generalizes to ETH untuned (1.40 vs 0.76). TEST still locked. |
-| Backtester | ✅ v1 `src/backtest.py` + 5 known-outcome validation tests (`tests/test_backtest.py`) all passing |
-| Risk Engine | ⬜ NOT BUILT |
-| Portfolio Engine | ⬜ NOT BUILT — likely UNNECESSARY until >1 instrument survives validation |
-| ML | 🚫 GATED — no baseline exists, so ML is not permitted yet |
-| MT5 | ❌ MISSING in this environment — deliverable-only (code for user's own Windows/VPS demo account) |
-| Demo | ❌ Not reachable from sandbox — internal PAPER simulator is the ceiling here |
-| Monitoring | ⬜ NOT BUILT |
+| Strategies | 🔴 Candidate v1 (TSMOM ensemble × vol-target) **REJECTED at locked TEST** (ledger 0005): Sharpe 1.05 vs B&H 1.21 on 2023-2026. Drawdown halved, but pre-declared criteria required beating passive — it didn't. No tweaking-to-pass allowed; TEST consumed. |
+| Backtester | ✅ v1 validated (5 known-outcome tests) |
+| Risk Engine | ✅ Built + red-teamed (`src/risk_engine.py`): daily-loss/drawdown/equity kill-switches (halt, no silent resume), stale-data + abnormal-move NO TRADE, weight clipping, error→NO TRADE. Confirmed live in paper replay (halted correctly in 2025 drawdown). |
+| Portfolio Engine | ⬜ UNNECESSARY (single instrument; no strategy approved) |
+| ML | 🚫 GATED (no surviving baseline to beat) |
+| MT5 | ⏸️ Execution layer NOT built — no strategy is approved for demo, so building it now would be waste. Stack is ready to wrap a future approved strategy. |
+| Demo | 🔴 BLOCKED by ledger 0005 rejection (correct behavior, not a bug) |
+| Monitoring | 🟡 Trade journal CSV via paper trader; sufficient for paper mode |
 
-**Current hypothesis:** H1+H2 (TSMOM ensemble {60..250} × vol-target 30d/0.6) — survived pre-registered VALIDATION on BTC and untuned ETH.
-**Current experiment:** validation complete (ledgers 0003, 0004). Next phase: EXECUTION engineering.
-**Current strategy version:** candidate v1 (params frozen in `research/VALIDATION_PREREG.md`); not yet TEST-evaluated.
-**Known failures:** SOL dataset rejected; validator null-check bug (fixed); Sharpe gap on 4y not statistically decisive alone (see ledger 0004 uncertainty notes).
-**Current blockers:** broker specs + MT5 machine needed only for DEMO phase — `research/USER_TODO.md`.
-**Highest-value next action:** build independent risk engine + paper-trading layer around frozen candidate → single locked TEST evaluation → software red-team → MT5 deliverable package.
+**Current hypothesis:** none active. H1+H2 family rejected at TEST (ledger 0005) despite passing pre-registered VALIDATION (ledger 0004) — regime-dependent edge, decayed post-2022.
+**Current experiment:** none. Research Director options listed in ledger 0005 §Decision.
+**Current strategy version:** v1 REJECTED for deployment. Software stack (backtester+strategy interface+risk engine+paper trader, 13 tests passing) retained, strategy-agnostic.
+**Known failures:** SOL dataset (nulls); validator null-check bug (fixed); **candidate v1 failed locked TEST — recorded, not hidden, not tuned around**.
+**Current blockers:** none for research; MT5 items (`USER_TODO.md`) moot until a strategy survives a full pipeline.
+**Highest-value next action (Research Director):** start forward paper trading of v1 via Kraken route (free out-of-sample evidence, zero risk) while pre-registering the next hypothesis family (mean-reversion/regime filters) with ETH as the untouched test market under a new split policy.
