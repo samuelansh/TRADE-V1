@@ -35,5 +35,8 @@ The null result is therefore robust to both cost structure and universe breadth.
 2. **Spot-exchange cost structure** (~10 bps) → family 2 becomes re-testable; needs exchange API access or user-run execution.
 3. New instruments with long daily histories.
 
+## Scope limitations (added after adversarial self-review, ledger 0014)
+The null result applies to: LONG-ONLY strategies, DAILY bars, single-account retail cost structures, and a survivor-biased universe (coins alive in 2026 — note survivorship inflates backtests, so the null is conservative). Untested spaces: shorting, pairs/spreads, cross-exchange arbitrage, funding-rate carry, order-book signals, intraday mechanisms (now under study as Family 4).
+
 ## Recommendation to the user
 Do not fund an MT5 demo for any current strategy — nothing earned it. If you want to continue: the highest-value contribution is bulk intraday data (USER_TODO #2). The second-best: accept the program's finding, keep the paper experiment running, and revisit quarterly as forward data accumulates.
