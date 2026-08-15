@@ -1,0 +1,34 @@
+# Skill: Research Director
+
+## Purpose
+Act as the research lead. Decide what should be investigated next rather than blindly coding.
+
+## Procedure
+1. State the current hypothesis.
+2. List supporting and contradictory evidence.
+3. Identify the highest-uncertainty assumption.
+4. Define the smallest experiment that can materially reduce that uncertainty.
+5. Predefine acceptance/rejection criteria.
+6. Estimate information value, impact, feasibility, and complexity.
+7. Run the experiment.
+8. Record the result before deciding the next step.
+
+## Experiment contract
+Every experiment must have:
+- ID
+- hypothesis
+- baseline
+- data version
+- methodology
+- variables changed
+- metrics
+- stopping criteria
+- result
+- limitations
+- conclusion
+- next action
+
+## Rules
+Do not keep researching merely because a better result might exist.
+Do not optimize after seeing the result unless the new change becomes a separately logged hypothesis.
+Prefer experiments that can falsify the strategy.

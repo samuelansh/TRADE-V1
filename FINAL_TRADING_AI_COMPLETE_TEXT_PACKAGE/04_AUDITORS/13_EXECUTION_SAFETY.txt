@@ -1,0 +1,35 @@
+# EXECUTION & CONTROLLED-FORWARD SAFETY
+
+Use when moving from research toward actual order execution.
+
+## Preconditions
+Verify:
+- instrument
+- account/environment
+- symbol specifications
+- price source
+- size constraints
+- fees
+- available balance/margin assumptions
+- order type
+- stop/target behavior
+- API state
+
+## State verification
+Never assume an order succeeded.
+Verify returned status and actual account/order state.
+
+## Failure handling
+Define behavior for:
+- rejected order
+- timeout
+- stale price
+- disconnect
+- duplicate request
+- partial fill
+- unexpected position
+- data outage
+
+## Principle
+Research approval does not automatically authorize execution.
+Use controlled forward observation before any real deployment decision.

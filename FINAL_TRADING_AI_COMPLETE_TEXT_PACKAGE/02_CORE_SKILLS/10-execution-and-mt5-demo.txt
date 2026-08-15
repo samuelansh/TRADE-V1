@@ -1,0 +1,53 @@
+# Skill: Execution & MT5 DEMO Safety
+
+## Purpose
+Translate validated signals into controlled DEMO execution.
+
+## Modes
+BACKTEST → PAPER → DEMO → LIVE
+
+Default: DEMO.
+
+Never silently change modes.
+
+## Pre-order gate
+Check:
+- signal validity
+- market state
+- data freshness
+- spread
+- volatility
+- risk
+- portfolio exposure
+- existing positions
+- position size
+- SL/TP validity
+- account state
+- MT5 connection
+
+## Post-order verification
+Never assume submission equals execution.
+
+Verify:
+- broker response
+- order/ticket state
+- position state
+- fill price
+- volume
+- account state
+
+If state is uncertain:
+NO TRADE / SAFE STOP.
+
+## Failure handling
+Design for:
+- disconnect
+- rejected orders
+- duplicate submissions
+- restart
+- stale data
+- invalid symbols
+- abnormal spreads
+- partial fills where applicable
+
+All execution events must be journaled.

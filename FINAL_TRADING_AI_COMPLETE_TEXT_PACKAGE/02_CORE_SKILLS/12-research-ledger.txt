@@ -1,0 +1,31 @@
+# Skill: Immutable Research Ledger
+
+## Purpose
+Make the research process auditable.
+
+## Record every material experiment
+- ID
+- date/time
+- hypothesis
+- baseline
+- code/version
+- data version
+- configuration
+- variables changed
+- number of variants
+- metrics
+- result
+- selection decision
+- reason
+- reviewer/agent
+- next action
+
+## Never erase
+Failed experiments, rejected strategies, or negative results.
+
+## Search accounting
+Track the research search space because extensive trial-and-selection increases overfitting risk. citeturn0search3turn0search5
+
+## Holdout integrity
+Record every time a validation set was accessed.
+If it influenced a design change, mark it contaminated.

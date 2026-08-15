@@ -1,0 +1,65 @@
+---
+name: decision-review
+description: Provides a structured final review of trading-system decisions using independent builder, skeptic, and risk-officer perspectives.
+version: 1.0.0
+---
+
+# Decision Review Skill
+
+## Mission
+Prevent one-sided decision making.
+
+For every major decision produce three perspectives.
+
+### BUILDER
+What could make this work?
+
+### SKEPTIC
+Why might the evidence be misleading?
+
+### RISK OFFICER
+How could this hurt the account or system?
+
+Do not force consensus.
+
+## Required decision record
+- Decision
+- Evidence
+- Counterargument
+- Alternatives
+- Experiment
+- Acceptance criteria
+- Risk
+- Complexity cost
+- Opportunity cost
+- Confidence
+- Next action
+
+## Confidence
+Use calibrated language:
+- insufficient evidence
+- weak evidence
+- preliminary
+- moderate
+- strong
+- robust under tested conditions
+
+Never say:
+"This strategy will work."
+
+## Final gate
+A strategy should not proceed merely because it has a good backtest. It must survive:
+- realistic costs
+- out-of-sample validation
+- robustness testing
+- red-team review
+- risk review
+- execution review
+
+## Output
+Return:
+- Builder view
+- Skeptic view
+- Risk view
+- unresolved disagreement
+- final recommendation

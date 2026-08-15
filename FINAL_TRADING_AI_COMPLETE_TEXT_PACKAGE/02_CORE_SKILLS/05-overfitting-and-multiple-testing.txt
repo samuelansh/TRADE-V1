@@ -1,0 +1,45 @@
+# Skill: Overfitting & Multiple-Testing Auditor
+
+## Purpose
+Detect research-selection bias and backtest overfitting.
+
+Research literature shows that trying many strategy configurations can make impressive historical performance appear by chance; the number of configurations tested matters. Use a research trial ledger and treat selection-adjusted evidence seriously. citeturn0search0turn0search3
+
+## Required ledger
+Count:
+- strategy variants
+- parameter combinations
+- markets
+- timeframes
+- feature sets
+- model architectures
+- entry/exit variants
+- filters
+- experiments that materially influenced selection
+
+## Validation
+Use, as appropriate:
+- walk-forward evaluation
+- untouched holdout
+- combinatorial or resampling approaches
+- parameter stability
+- regime stability
+- cost stress
+- Deflated Sharpe Ratio concepts
+- Probability of Backtest Overfitting concepts
+
+DSR is intended to account for selection bias/multiple testing and non-normal returns; do not treat ordinary Sharpe as sufficient evidence. citeturn0search5
+
+## Critical rule
+Do not repeatedly inspect the final holdout and then modify the strategy.
+
+If the holdout influenced development:
+mark it CONTAMINATED and establish a new evaluation set.
+
+## Output
+Report:
+- trial count or best available estimate
+- selection process
+- validation process
+- remaining contamination risk
+- confidence downgrade if search was extensive

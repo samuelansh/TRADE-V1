@@ -1,0 +1,33 @@
+# Skill: Code Review & Reproducibility
+
+## Purpose
+Ensure research code can be trusted and repeated.
+
+## Requirements
+- deterministic configuration where possible
+- pinned environment/dependencies
+- explicit random seeds when applicable
+- versioned datasets
+- versioned strategy configuration
+- testable modules
+- unit tests
+- integration tests
+- regression tests
+- clear logging
+- reproducible experiment commands
+
+## Review
+Inspect for:
+- hidden state
+- data leakage
+- timezone bugs
+- off-by-one errors
+- look-ahead
+- order duplication
+- incorrect position sizing
+- numerical instability
+- silent exceptions
+- hard-coded assumptions
+
+## Rule
+A result that cannot be reproduced should not be treated as strong evidence.

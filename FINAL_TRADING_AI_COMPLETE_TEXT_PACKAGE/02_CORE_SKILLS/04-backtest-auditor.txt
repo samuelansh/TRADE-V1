@@ -1,0 +1,40 @@
+# Skill: Backtest Auditor
+
+## Purpose
+Determine whether a backtest is a credible simulation rather than a performance illustration.
+
+## Audit
+- signal timing
+- order timing
+- bid/ask
+- spread
+- commission
+- slippage
+- latency where material
+- order type
+- partial fills where relevant
+- trading hours
+- position sizing
+- stop/TP behavior
+- portfolio constraints
+- instrument specifications
+
+## Required comparisons
+Run:
+1. idealized assumptions
+2. realistic assumptions
+3. stressed assumptions
+
+If the edge disappears under reasonable costs or execution uncertainty, downgrade or reject it.
+
+## Never assume
+Signal price equals fill price.
+Submitted order equals executed order.
+Historical spread equals future spread.
+Backtest availability equals live availability.
+
+## Audit output
+Verdict:
+PASS / CONDITIONAL / FAIL
+
+List the assumptions most capable of changing the conclusion.

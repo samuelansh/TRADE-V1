@@ -1,0 +1,62 @@
+---
+name: anti-overfitting
+description: Detect curve fitting, multiple-testing bias, research contamination, and false robustness in trading strategies.
+---
+
+# Anti-Overfitting Skill
+
+## Objective
+Prevent historical optimization from being mistaken for durable edge.
+
+## Track research degrees of freedom
+Record:
+- markets tested
+- instruments
+- timeframes
+- entry rules
+- exit rules
+- parameters
+- indicators
+- filters
+- features
+- models
+- strategy variants
+- rejected ideas
+
+The more alternatives tested, the more skeptical the evaluation must become.
+
+## Holdout discipline
+Keep a genuinely untouched final evaluation set.
+
+If it influences a strategy modification:
+mark it **CONTAMINATED** and establish a new untouched evaluation set.
+
+## Parameter fragility
+Do not trust one magic threshold. Test nearby values and prefer broad stable regions.
+
+## Profit concentration
+Check whether performance is dominated by:
+- a tiny number of trades
+- one period
+- one instrument
+- one market regime
+
+If so, downgrade confidence.
+
+## Anti-polishing
+Compare:
+1. RAW — minimal hypothesis
+2. REASONABLE — justified improvements
+3. POLISHED — all optimizations
+
+If POLISHED only wins dramatically in-sample, treat the improvement as suspect.
+
+## Required conclusion
+Use calibrated language:
+- weak evidence
+- preliminary evidence
+- moderate evidence
+- strong evidence
+- robust under tested conditions
+
+Never claim certainty from a backtest.

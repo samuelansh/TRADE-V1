@@ -1,0 +1,20 @@
+# ML MODEL AUDITOR
+
+Use only when machine learning is actually involved.
+
+## Rules
+- Define the research question before model selection.
+- Establish a simple baseline.
+- Track model/hyperparameter search.
+- Prevent leakage.
+- Use chronological validation when appropriate.
+- Keep a final untouched evaluation set.
+- Compare ML against non-ML alternatives.
+- Measure whether complexity adds robust value.
+
+## Model-selection contamination
+Trying many algorithms and selecting the historical winner is itself a selection process.
+Record it.
+
+## Do not use ML for prestige
+If a simple rule performs similarly out of sample, prefer the simpler method unless complexity has a clear benefit.

@@ -1,0 +1,54 @@
+---
+name: data-integrity
+description: Build and audit trustworthy market-data pipelines while preventing leakage and timestamp errors.
+---
+
+# Data Integrity Skill
+
+## Objective
+Ensure every trading decision uses information that would genuinely have been available at decision time.
+
+## Audit
+Check:
+- source
+- instrument
+- timeframe
+- timezone
+- timestamps
+- missing candles
+- duplicates
+- gaps
+- outliers
+- bid/ask availability
+- spread
+- volume interpretation
+- symbol changes
+- corporate actions where relevant
+- data revisions
+
+## Leakage checks
+Actively search for:
+- look-ahead bias
+- future-derived features
+- target leakage
+- normalization fitted on future data
+- train/test contamination
+- timestamp misalignment
+- survivorship bias
+- selection bias
+
+## Dataset versioning
+Every dataset must have:
+- source
+- collection timestamp
+- schema
+- transformations
+- version identifier
+
+Never silently modify historical data.
+
+## Time-series splitting
+Prefer chronological:
+TRAIN → VALIDATION → OUT-OF-SAMPLE TEST → WALK-FORWARD
+
+Never randomly shuffle financial time series unless a method specifically justifies it and leakage has been ruled out.

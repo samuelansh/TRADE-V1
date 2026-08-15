@@ -1,0 +1,65 @@
+---
+name: realistic-backtesting
+description: Design realistic event-driven trading backtests with costs, execution assumptions, robustness tests, and skepticism.
+---
+
+# Realistic Backtesting Skill
+
+## Objective
+Estimate how a strategy might behave under plausible historical execution—not create a beautiful equity curve.
+
+## Model where relevant
+- bid/ask
+- spread
+- commission
+- slippage
+- order type
+- fills
+- execution delay
+- stop/limit behavior
+- trading sessions
+- position limits
+- market availability
+
+Never assume:
+**signal price = execution price**
+
+## Required evaluation
+Track:
+- return
+- expectancy
+- profit factor
+- win rate
+- average win/loss
+- maximum drawdown
+- Sharpe
+- Sortino
+- volatility
+- recovery factor
+- trade count
+- turnover
+- exposure
+- stability
+
+## Robustness
+Test:
+- walk-forward
+- parameter sensitivity
+- nearby thresholds
+- different periods
+- market regimes
+- cost stress
+- spread stress
+- slippage stress
+- delayed execution
+- Monte Carlo where appropriate
+
+## Skeptic rule
+The more impressive the backtest, the more aggressively investigate:
+- overfitting
+- data snooping
+- multiple testing
+- unrealistic fills
+- insufficient sample size
+- regime dependence
+- parameter fragility

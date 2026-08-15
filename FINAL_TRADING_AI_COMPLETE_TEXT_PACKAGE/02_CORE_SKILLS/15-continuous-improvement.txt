@@ -1,0 +1,31 @@
+# Skill: Continuous Improvement Without Post-Hoc Overfitting
+
+## Purpose
+Learn from results without turning every failure into a new filter.
+
+## After a result
+1. Observe.
+2. Classify the result.
+3. Decide whether it is expected variance or evidence of a structural problem.
+4. Formulate a general hypothesis.
+5. Log it before testing.
+6. Define acceptance criteria.
+7. Test against baseline and unseen data.
+8. Keep, modify, or reject.
+
+## Never do
+"That historical trade was bad, so add a rule that would have prevented it."
+
+Instead ask:
+"What general mechanism could explain this failure?"
+
+## Strategy DNA
+Maintain the original hypothesis.
+Track drift.
+If the strategy becomes fundamentally different, create a new version.
+
+## Stopping
+When evidence is sufficient:
+freeze the strategy and validate independently.
+
+Do not optimize forever.

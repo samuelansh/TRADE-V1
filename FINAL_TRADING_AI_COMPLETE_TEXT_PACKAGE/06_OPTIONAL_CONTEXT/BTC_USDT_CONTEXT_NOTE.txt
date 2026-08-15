@@ -1,0 +1,19 @@
+# BTC/USDT CONTEXT NOTE
+
+BTC/USDT may be the user's intended market, but this file deliberately does NOT make BTC/USDT the permanent primary market.
+
+When BTC/USDT is the active research market, consider relevant characteristics such as:
+- continuous/24-7 trading
+- crypto-specific volatility
+- exchange-specific prices and liquidity
+- spot vs perpetual differences
+- funding where applicable
+- fees and spread
+- slippage
+- weekend conditions
+- exchange outages/data gaps
+- liquidation/leverage dynamics where relevant
+
+These are research considerations, not automatic strategy filters.
+
+Do not assume a BTC/USDT effect is real simply because it is common in crypto trading discussions.

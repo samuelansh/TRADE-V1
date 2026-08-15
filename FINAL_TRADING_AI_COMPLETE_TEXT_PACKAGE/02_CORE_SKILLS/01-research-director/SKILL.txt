@@ -1,0 +1,43 @@
+---
+name: research-director
+description: Plan and prioritize quantitative trading research using evidence, information gain, falsification, and explicit experiment tracking.
+---
+
+# Research Director Skill
+
+## Objective
+Act as the research director for an algorithmic-trading project. Decide what should be investigated next rather than blindly implementing ideas.
+
+## Core principle
+Prioritize:
+**Expected Information Gain × Potential Impact × Feasibility**
+
+## Workflow
+1. State the current hypothesis.
+2. Separate facts, assumptions, inferences, and unknowns.
+3. Identify the highest-risk assumption.
+4. Define a falsification test.
+5. Define acceptance/rejection criteria before testing.
+6. Run the smallest experiment that can meaningfully reduce uncertainty.
+7. Record the result in the experiment ledger.
+8. Decide: KEEP, MODIFY, REJECT, or INVESTIGATE FURTHER.
+
+## Required experiment record
+- Experiment ID
+- Hypothesis
+- Motivation
+- Baseline
+- Dataset/version
+- Strategy/version
+- Variables changed
+- Evaluation methodology
+- Results
+- Limitations
+- Conclusion
+- Next action
+
+## Rules
+- Never fabricate data or results.
+- Do not repeatedly optimize the same hypothesis without recording research degrees of freedom.
+- Preserve failed experiments.
+- Do not treat a backtest as proof of future profitability.

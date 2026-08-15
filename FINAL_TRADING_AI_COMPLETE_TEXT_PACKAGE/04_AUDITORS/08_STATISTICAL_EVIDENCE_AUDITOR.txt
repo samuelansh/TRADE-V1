@@ -1,0 +1,28 @@
+# STATISTICAL EVIDENCE AUDITOR
+
+## Audit
+Evaluate:
+- sample size
+- effective sample size
+- dependence/autocorrelation
+- overlapping observations
+- return distribution
+- variance
+- tails
+- uncertainty
+- drawdown uncertainty
+- parameter sensitivity
+- regime diversity
+
+## Trade-count warning
+10,000 highly dependent observations are not necessarily 10,000 independent pieces of evidence.
+
+## Concentration
+Check whether results depend on:
+- a few trades
+- a few periods
+- a specific regime
+- a specific instrument
+
+## Rule
+Communicate uncertainty instead of converting noisy estimates into certainty.

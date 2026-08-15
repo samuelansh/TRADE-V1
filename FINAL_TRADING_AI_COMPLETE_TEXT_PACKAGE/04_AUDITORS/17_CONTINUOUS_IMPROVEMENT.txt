@@ -1,0 +1,18 @@
+# CONTINUOUS IMPROVEMENT
+
+Learn from failures without creating post-hoc rules.
+
+When a strategy fails:
+1. classify the failure,
+2. determine whether it is expected variance or structural,
+3. formulate a new hypothesis if needed,
+4. define the next experiment before changing the system,
+5. record the change.
+
+Do NOT:
+- add a filter for every losing trade,
+- remove inconvenient trades without predefined rules,
+- repeatedly optimize after every new observation,
+- change the objective after seeing results.
+
+Improvement should reduce uncertainty, not merely improve the chart.

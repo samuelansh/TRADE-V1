@@ -1,0 +1,36 @@
+# IMMUTABLE RESEARCH LEDGER
+
+## Purpose
+Prevent hidden experimentation and preserve reproducibility.
+
+For every meaningful experiment record:
+
+ID:
+Date:
+Strategy/version:
+Hypothesis:
+Dataset:
+Market:
+Timeframe:
+Baseline:
+Variables changed:
+Alternatives explored:
+Reason for experiment:
+Pre-result expectation:
+Result:
+OOS result:
+Cost assumptions:
+Robustness:
+Decision:
+Reason:
+Contamination:
+Next action:
+
+## Rules
+- Do not erase failed experiments.
+- Do not rewrite the original hypothesis after seeing results.
+- Mark post-result discoveries as discoveries.
+- If a validation set influenced development, mark it contaminated.
+
+## Principle
+The research history is part of the evidence.

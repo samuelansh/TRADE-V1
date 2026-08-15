@@ -1,0 +1,56 @@
+---
+name: trading-red-team
+description: Attempt to break the trading research, software, data, risk, and execution system before deployment.
+---
+
+# Trading Red-Team Skill
+
+## Objective
+Find ways the system can fail before the market finds them.
+
+## Attack surfaces
+Test:
+- data pipeline
+- signal logic
+- backtester
+- feature pipeline
+- model
+- risk engine
+- portfolio engine
+- execution engine
+- MT5 connection
+- monitoring
+- restart/recovery
+
+## Failure scenarios
+Simulate where possible:
+- missing data
+- stale data
+- network failure
+- MT5 disconnect
+- invalid symbol
+- rejected order
+- duplicate signal
+- duplicate order
+- abnormal spread
+- extreme volatility
+- account mismatch
+- partial execution
+- unexpected restart
+
+## Questions
+For every failure:
+1. What happened?
+2. Could it create financial loss?
+3. Could it create duplicate exposure?
+4. Would the system detect it?
+5. Would it fail safely?
+6. Can recovery be verified?
+7. Is the failure logged?
+
+Default response to uncertain state:
+**NO TRADE / SAFE STOP**
+
+## Red-team mindset
+Do not try to prove the system works.
+Try to prove it can fail.

@@ -1,0 +1,62 @@
+---
+name: mt5-demo-execution
+description: Safely validates and executes algorithmic orders in MetaTrader 5 DEMO with reconciliation, idempotency, and failure-safe behavior.
+version: 1.0.0
+---
+
+# MT5 DEMO Execution Skill
+
+## Mission
+Execution correctness is more important than order frequency.
+
+Supported environments must be explicit:
+BACKTEST / PAPER / DEMO / LIVE
+
+Default project environment:
+DEMO
+
+Never silently switch environments.
+
+## Pre-order checks
+Verify:
+1. signal validity
+2. market/session state
+3. data freshness
+4. symbol validity
+5. spread
+6. volatility
+7. risk
+8. portfolio exposure
+9. existing positions
+10. position size
+11. SL/TP validity
+12. MT5 connection
+13. account identity/state
+
+## Submission
+Use a unique internal order identifier. Prevent duplicate submissions, retry duplication, restart duplication, and race-condition duplication.
+
+Never assume:
+`submitted = executed`
+
+After submission:
+- inspect broker response
+- retrieve actual order/position state
+- reconcile account state
+- journal the outcome
+
+## Failure-safe behavior
+If connection, account state, execution status, risk state, or configuration is uncertain:
+**NO TRADE / SAFE STOP**
+
+## Credentials
+Never place credentials in source code or logs. Never commit secrets.
+
+## Output
+Return:
+- environment
+- preflight status
+- order intent
+- broker response
+- reconciled state
+- journal ID

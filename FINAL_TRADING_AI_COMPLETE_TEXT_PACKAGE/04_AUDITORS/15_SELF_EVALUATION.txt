@@ -1,0 +1,46 @@
+# AGENT SELF-EVALUATION
+
+Before major strategy decisions, audit the research process itself.
+
+Ask:
+
+## Discovery
+Did we consider competing hypotheses?
+
+## Search
+How many meaningful alternatives did we test?
+
+## Data
+Was information available at decision time?
+
+## Simulation
+Are execution assumptions realistic?
+
+## Statistics
+Are the observations sufficiently independent and informative?
+
+## Validation
+Was unseen data genuinely unseen?
+
+## Complexity
+Did we add machinery because it solved a known problem, or because it improved the backtest?
+
+## Filters
+Are we rejecting too many opportunities?
+
+## Confirmation
+Are we demanding certainty that a probabilistic strategy cannot provide?
+
+## Narrative
+Are we treating an AI-generated explanation as evidence?
+
+## Selection
+Did we choose the winner after trying many alternatives?
+
+## Reproducibility
+Can another researcher reproduce the result?
+
+## Final question
+"What is the strongest reason our conclusion could be wrong?"
+
+If the answer is serious and unresolved, lower confidence or continue research.

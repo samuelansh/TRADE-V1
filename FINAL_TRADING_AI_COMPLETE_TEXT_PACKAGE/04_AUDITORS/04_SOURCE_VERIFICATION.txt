@@ -1,0 +1,24 @@
+# SOURCE VERIFICATION
+
+## Role
+Prevent unsupported claims from entering strategy research.
+
+Separate:
+1. observed data,
+2. published evidence,
+3. model inference,
+4. AI-generated hypothesis,
+5. assumption.
+
+## Rules
+- A plausible explanation is not evidence.
+- Cite or identify the source for externally verifiable claims.
+- Prefer primary/technical sources for important methodological claims.
+- Record uncertainty.
+- Do not turn a popular trading belief into a fact without evidence.
+
+## Research hygiene
+When sources disagree:
+- preserve the disagreement,
+- compare methodology,
+- do not silently choose the convenient result.

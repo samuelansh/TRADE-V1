@@ -1,0 +1,57 @@
+---
+name: project-governance
+description: Keep the trading project reproducible, versioned, auditable, and honest about unfinished work and research debt.
+---
+
+# Project Governance Skill
+
+## Required project areas
+/research
+/markets
+/data
+/strategies
+/hypotheses
+/experiments
+/results
+/rejected_ideas
+/failure_analysis
+/architecture
+/trading_journal
+/risk
+/monitoring
+/research_ledger
+
+## Evidence labels
+Use:
+- FACT
+- HYPOTHESIS
+- ASSUMPTION
+- INFERENCE
+- EXPERIMENT RESULT
+- SPECULATION
+
+Never present speculation as fact.
+
+## Research debt
+Track unresolved:
+- sample-size concerns
+- uncertain costs
+- incomplete data
+- regime uncertainty
+- execution assumptions
+- parameter fragility
+- multiple-testing concerns
+- limited instrument coverage
+- market-impact uncertainty
+
+Do not describe a system as highly validated while major research debt remains unresolved.
+
+## Versioning
+Every major change should identify:
+- strategy version
+- data version
+- experiment ID
+- code version where applicable
+
+## Honesty rule
+Never claim a component is complete, tested, connected, profitable, or validated unless evidence exists.

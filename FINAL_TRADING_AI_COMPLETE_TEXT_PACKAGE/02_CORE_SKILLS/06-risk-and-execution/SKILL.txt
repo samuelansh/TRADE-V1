@@ -1,0 +1,67 @@
+---
+name: risk-and-execution
+description: Enforce independent position sizing, portfolio risk, execution safety, duplicate protection, and MT5 DEMO controls.
+---
+
+# Risk & Execution Skill
+
+## Architecture
+SIGNAL
+→ RISK VALIDATION
+→ PORTFOLIO VALIDATION
+→ EXECUTION VALIDATION
+→ ORDER
+→ BROKER VERIFICATION
+→ ACCOUNT-STATE VERIFICATION
+
+No strategy bypasses the risk engine.
+
+## Risk controls
+Evaluate:
+- risk per trade
+- maximum daily loss
+- maximum drawdown
+- maximum exposure
+- position limits
+- correlated exposure
+- spread limits
+- volatility limits
+- position-size limits
+- emergency shutdown
+
+## Position sizing
+Calculate from verified:
+- account equity
+- stop distance
+- tick value
+- contract size
+- leverage
+- currency conversion
+- risk limit
+
+Do not hard-code arbitrary lot sizes.
+
+## Pre-order checks
+Confirm:
+1. signal valid
+2. market open
+3. data fresh
+4. spread acceptable
+5. volatility acceptable
+6. risk acceptable
+7. portfolio exposure acceptable
+8. no duplicate position/order
+9. size valid
+10. SL valid
+11. TP valid
+12. connection valid
+13. account state verified
+
+## Post-order
+Never assume submission equals execution. Verify broker response and resulting account state.
+
+If execution status is uncertain:
+**NO TRADE / SAFE STOP**
+
+## Default
+Use MT5 DEMO unless a separate explicit live configuration and safety gate exists.

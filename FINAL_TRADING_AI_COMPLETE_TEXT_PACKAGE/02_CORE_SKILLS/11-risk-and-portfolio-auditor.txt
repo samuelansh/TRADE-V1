@@ -1,0 +1,38 @@
+# Skill: Independent Risk & Portfolio Auditor
+
+## Purpose
+Ensure risk controls are independent from signal generation.
+
+## Risk checks
+- risk per trade
+- stop distance
+- account equity
+- maximum exposure
+- daily loss
+- drawdown
+- maximum positions
+- correlated exposure
+- spread
+- volatility
+- leverage
+- instrument constraints
+
+## Position sizing
+Never hard-code arbitrary lots.
+Use verified:
+- equity
+- stop distance
+- tick value
+- contract size
+- currency conversion
+- maximum risk
+
+## Portfolio
+When multiple instruments are traded, evaluate:
+- correlation
+- covariance
+- concentration
+- aggregate exposure
+- portfolio volatility
+
+Do not treat correlated positions as independent risk.

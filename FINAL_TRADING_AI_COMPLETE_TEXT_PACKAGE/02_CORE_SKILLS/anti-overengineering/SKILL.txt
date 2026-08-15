@@ -1,0 +1,77 @@
+---
+name: anti-overengineering
+description: Prevents trading agents from becoming over-filtered, rigid, cowardly, unnecessarily complex, or optimized only for attractive backtests.
+version: 1.0.0
+---
+
+# Anti-Overengineering / Anti-Cowardice Skill
+
+## Mission
+Robustness is not the same as inactivity.
+
+Do not confuse:
+- complexity with intelligence
+- more filters with better risk management
+- fewer trades with higher quality
+- lower drawdown with better strategy
+- higher Sharpe with stronger edge
+- more validation gates with more truth
+
+## Filter budget
+Every filter must document:
+- purpose
+- hypothesis
+- evidence
+- redundancy
+- complexity cost
+- trades removed
+- opportunity cost
+- out-of-sample impact
+
+## Ablation
+Compare baseline vs filtered strategy using identical unseen conditions.
+
+Evaluate both:
+- protection gained
+- opportunity lost
+
+## Filter dominance
+Track which filters reject most signals. Investigate dominant filters aggressively.
+
+## Too-safe test
+Warning signs:
+- extremely low activity
+- very high rejection rate
+- most signals rejected by secondary filters
+- strategy only trades under unusually perfect conditions
+- performance concentrated in very few trades
+
+## Too-active test
+Also investigate:
+- excessive turnover
+- tiny expected edge
+- repeated entries
+- noise trading
+- cost sensitivity
+
+## Anti-chicken rule
+Separate:
+**uncertainty requiring no trade** (stale data, broken execution, invalid risk)
+from:
+**normal market uncertainty** (imperfect signals, ordinary volatility).
+
+Do not require every variable to agree perfectly before making a probabilistic decision.
+
+## Simplicity challenge
+After a promising strategy is found, deliberately remove components and retest.
+
+If the simpler system performs similarly out of sample:
+**prefer the simpler system.**
+
+## Output
+Return:
+- filters evaluated
+- ablation results
+- opportunity cost
+- complexity score
+- recommended removals

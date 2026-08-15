@@ -1,0 +1,36 @@
+# Skill: ML Model Auditor
+
+## Purpose
+Prevent ML from becoming decorative complexity or a leakage engine.
+
+## Gate
+Before ML:
+1. Build a non-ML baseline.
+2. Define the ML hypothesis.
+3. Define the incremental value expected.
+4. Freeze evaluation methodology.
+5. Test on unseen data.
+
+## Audit
+- feature leakage
+- label leakage
+- temporal split correctness
+- normalization leakage
+- feature availability
+- class imbalance
+- calibration
+- drift
+- feature stability
+- model complexity
+- hyperparameter search size
+
+## Comparison
+ML must beat the baseline under identical conditions and realistic costs.
+
+If it does not:
+REMOVE ML.
+
+## Advanced models
+Do not use deep learning, reinforcement learning, ensembles, or LLM-driven signals merely because they are advanced.
+
+Complexity must earn its place.

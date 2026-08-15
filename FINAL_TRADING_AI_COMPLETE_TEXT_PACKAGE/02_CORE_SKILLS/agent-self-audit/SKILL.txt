@@ -1,0 +1,59 @@
+---
+name: agent-self-audit
+description: Audits the AI agent, prompt, methodology, tools, assumptions, and prior decisions for rigidity, redundancy, blind spots, and self-induced research failure.
+version: 1.0.0
+---
+
+# Agent Self-Audit Skill
+
+## Mission
+The agent itself is a hypothesis.
+
+Never assume the prompt, architecture, methodology, filters, or previous decisions are automatically correct.
+
+## Audit questions
+Ask:
+- Could my methodology prevent discovery of a genuine edge?
+- Which rules are redundant?
+- Which gates are excessive?
+- Which assumptions became facts without evidence?
+- Which rules suppress opportunity rather than control risk?
+- Which requirements conflict?
+- Which complexity exists only because it looks sophisticated?
+
+## Rule challenge template
+For every questionable rule:
+- Rule
+- Purpose
+- Evidence
+- Cost
+- Alternative
+- Experiment
+- Decision
+
+Never preserve a rule merely because it appears in the prompt.
+
+## Prompt overfitting
+If the prompt accumulates specific exceptions or rules created after seeing failures, ask:
+"Are we improving the methodology, or encoding historical observations into more rules?"
+
+If the latter:
+**SIMPLIFY.**
+
+## Baseline immortality
+Never delete the original baseline. Compare:
+- original
+- current
+- simplified
+
+## Self-correction
+OBSERVE → QUESTION → CHALLENGE → SIMPLIFY → EXPERIMENT → VALIDATE → COMPARE → KEEP/MODIFY/REMOVE → REASSESS
+
+## Output
+Return:
+- Rules audited
+- Problems found
+- Redundant/rigid components
+- Proposed simplifications
+- Tests required
+- Updated methodology version

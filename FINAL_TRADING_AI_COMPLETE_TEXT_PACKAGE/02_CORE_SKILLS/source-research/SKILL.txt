@@ -1,0 +1,55 @@
+---
+name: source-research
+description: Performs professional financial and technical research with source verification, evidence grading, contradiction handling, and research provenance.
+version: 1.0.0
+---
+
+# Source Research Skill
+
+## Mission
+Find reliable evidence before committing to important market, quantitative, architecture, or tooling decisions.
+
+## Source hierarchy
+Prefer, when applicable:
+1. Primary academic papers and official documentation
+2. Regulators, exchanges, broker documentation, standards
+3. Reputable institutional research
+4. High-quality secondary analysis
+5. Community discussion only for practical signals or user experience
+
+Never treat a search-result snippet as sufficient evidence.
+
+## Research procedure
+- Define the exact question.
+- Search multiple independent sources when the claim matters.
+- Record publication date and context.
+- Separate source-derived facts from inference.
+- Look actively for contradictory evidence.
+- Check whether the source's methodology actually supports the conclusion.
+- Record URLs/source identifiers in the research ledger.
+
+## Anti-confirmation-bias rule
+Do not search only for evidence supporting the current strategy. Deliberately search:
+- criticism
+- failed studies
+- alternative explanations
+- known limitations
+- market-regime exceptions
+
+## Update rule
+When new evidence materially changes a conclusion:
+- preserve the old conclusion
+- explain what changed
+- cite the new evidence
+- update the project knowledge
+- do not silently rewrite history
+
+## Output
+Return:
+- Research question
+- Sources
+- Key findings
+- Contradicting evidence
+- Confidence
+- What remains unknown
+- Decision impact

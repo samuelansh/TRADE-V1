@@ -1,0 +1,19 @@
+FINAL TRADING AI COMPLETE TEXT PACKAGE
+
+This folder contains the complete text-form trading-agent package.
+
+START HERE:
+1. 00_MASTER/MASTER_PROMPT.txt
+2. 01_BOOTSTRAP/MASTER_BOOTSTRAP.txt
+3. 01_BOOTSTRAP/README_FINAL_TRADING_AGENT.txt
+4. 00_PACKAGE_INDEX.txt
+
+Then use the relevant skills in 02_CORE_SKILLS/ and 04_AUDITORS/ according to the Research Router.
+
+03_STRATEGY_RESEARCH/ contains the dedicated Strategy Research Engine.
+06_OPTIONAL_CONTEXT/ contains optional BTC/USDT context and RL reference material.
+
+IMPORTANT:
+Do not treat every skill as mandatory for every task. Use the Research Router and load only the minimum relevant skills. More instructions do not automatically mean better research.
+
+The package preserves the content of the final package in plain TXT form. Markdown/JSON files have been converted to TXT without intentionally reducing their substantive content. The optional PDF reference is converted to TXT when text extraction is available.

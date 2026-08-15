@@ -1,0 +1,46 @@
+---
+name: trade-journal
+description: Maintain complete records of executed and rejected trading decisions for later research and audit.
+---
+
+# Trade Journal Skill
+
+## Executed trade fields
+Record:
+- timestamp
+- instrument
+- timeframe
+- strategy/version
+- regime
+- direction
+- entry
+- exit
+- SL
+- TP
+- size
+- spread
+- risk
+- signal reason
+- execution result
+- P/L
+- MFE
+- MAE
+- exit reason
+
+## Rejected signal fields
+Record:
+- timestamp
+- instrument
+- signal
+- strategy/version
+- rejection reason
+- risk state
+- market state
+
+## Principle
+A rejected trade is information too.
+
+Do not only analyze trades that were executed.
+
+## Integrity
+Journal records should be append-only where practical and linked to strategy/data/experiment versions.

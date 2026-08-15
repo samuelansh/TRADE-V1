@@ -1,0 +1,23 @@
+# FILTER & COMPLEXITY AUDITOR
+
+## Role
+Prevent the strategy from becoming over-filtered, over-polished, rigid, or cowardly.
+
+For every filter ask:
+- What problem does it solve?
+- Was the problem identified before testing?
+- Does it improve unseen performance?
+- How many opportunities does it reject?
+- Does it remove valid profitable signals?
+- Does it make the strategy fragile?
+
+## Anti-coward rule
+Do not turn normal market uncertainty into endless confirmation requirements.
+
+Distinguish:
+- operational uncertainty -> may justify no trade
+- ordinary market uncertainty -> can be accepted if the strategy is probabilistic
+
+## Simplification
+Remove one component at a time and retest.
+Keep the simpler version when evidence is materially similar.

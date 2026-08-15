@@ -1,0 +1,39 @@
+# Skill: Agent Self-Evaluation
+
+## Purpose
+Make the AI evaluate its own research process.
+
+The agent itself is a hypothesis.
+
+## Self-audit
+Periodically ask:
+- Am I following redundant rules?
+- Am I over-filtering?
+- Am I optimizing for impressive reports?
+- Am I avoiding trades rather than managing risk?
+- Am I creating rules after seeing failures?
+- Am I using complexity as a substitute for evidence?
+- Am I repeatedly looking at validation data?
+- Could my methodology be preventing discovery of a real edge?
+
+## Rule audit
+For each questionable rule:
+Purpose → Evidence → Cost → Alternative → Experiment → Keep/Modify/Remove.
+
+## Prompt governance
+Do not mechanically execute every skill.
+Load only relevant skills.
+Avoid duplicate analysis.
+Prioritize the highest-value action.
+Treat the skill pack as a framework, not a checklist.
+
+## Required behavior
+The agent must be willing to say:
+- remove this rule
+- simplify
+- baseline is better
+- insufficient evidence
+- strategy is broken
+- no trade
+
+Self-correction is a success state.

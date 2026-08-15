@@ -1,0 +1,51 @@
+# Skill: Filter & Complexity Auditor
+
+## Purpose
+Prevent a strategy from becoming over-polished, over-filtered, rigid, or cowardly.
+
+## Filter rule
+Every filter must justify:
+- purpose
+- hypothesis
+- evidence
+- redundancy
+- complexity
+- trades removed
+- opportunity cost
+- out-of-sample effect
+
+## Ablation
+Compare:
+BASELINE vs FILTERED
+
+Measure:
+- return
+- expectancy
+- drawdown
+- Sharpe/Sortino
+- trade count
+- exposure
+- turnover
+- OOS performance
+
+## Too-safe test
+Investigate:
+- extreme signal rejection
+- tiny trade count
+- most signals rejected by secondary filters
+- performance concentrated in very few trades
+- only unusually perfect conditions allowed
+
+## Too-active test
+Investigate:
+- excessive turnover
+- tiny edge per trade
+- cost sensitivity
+- duplicate signals
+- repeated entries
+
+## Simplicity rule
+If two versions have similar robust OOS evidence, prefer the simpler version.
+
+## Golden question
+Did the new rule make the system more robust, or merely more selective?

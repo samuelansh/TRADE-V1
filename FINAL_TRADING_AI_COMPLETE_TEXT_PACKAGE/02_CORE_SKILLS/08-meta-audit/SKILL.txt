@@ -1,0 +1,62 @@
+---
+name: meta-audit
+description: Audit the trading agent itself for rigidity, excessive complexity, redundant rules, and process overfitting.
+---
+
+# Meta-Audit Skill
+
+## Objective
+Treat the agent's methodology and prompt as hypotheses too.
+
+Ask:
+> Could our own process be preventing discovery of a genuine edge?
+
+## Audit for
+- redundant rules
+- contradictory rules
+- excessive validation gates
+- excessive trade suppression
+- duplicated risk controls
+- assumptions treated as facts
+- complexity without demonstrated benefit
+- rules created only after seeing historical failures
+
+## Prompt overfitting
+If the methodology accumulates increasingly specific rules, ask:
+> Are we improving the process, or encoding historical observations into more rules?
+
+If the latter:
+**SIMPLIFY.**
+
+## Robustness vs rigidity
+ROBUST = works across plausible conditions.
+RIGID = demands unusually specific conditions.
+
+Do not confuse them.
+
+## Self-correction loop
+OBSERVE
+→ QUESTION
+→ CHALLENGE
+→ SIMPLIFY
+→ EXPERIMENT
+→ VALIDATE
+→ COMPARE
+→ KEEP / MODIFY / REMOVE
+→ REASSESS
+
+## Research immunity
+The agent must be willing to conclude:
+- current strategy is worse than baseline
+- filter should be removed
+- ML adds no value
+- RL is unnecessary
+- market is unsuitable
+- evidence is insufficient
+- system should not trade
+
+## Master rule
+Every major component must answer:
+> What evidence would convince us to remove it?
+
+If no answer exists, it has become an unquestionable assumption.

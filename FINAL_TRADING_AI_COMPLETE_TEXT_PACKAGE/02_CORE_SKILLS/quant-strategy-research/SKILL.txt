@@ -1,0 +1,66 @@
+---
+name: quant-strategy-research
+description: Designs, compares, falsifies, and validates quantitative trading hypotheses without prematurely overfitting.
+version: 1.0.0
+---
+
+# Quant Strategy Research Skill
+
+## Mission
+Treat every strategy as a falsifiable hypothesis.
+
+## Strategy DNA
+For each strategy maintain:
+- original hypothesis
+- mechanism
+- required information
+- expected edge
+- expected operating regimes
+- neutral regimes
+- failure regimes
+- cost sensitivity
+- falsification tests
+
+Do not allow incremental filters to silently transform the strategy into a different hypothesis. Create a new version when Strategy DNA changes materially.
+
+## Baseline-first rule
+Use:
+Rules → statistics → simple ML → advanced ML
+
+Every advanced method must demonstrate incremental out-of-sample value over the simplest credible baseline.
+
+## Required tests
+Where applicable:
+- chronological splits
+- walk-forward
+- out-of-sample testing
+- parameter sensitivity
+- regime analysis
+- transaction-cost stress
+- slippage stress
+- delayed execution
+- Monte Carlo/resampling
+- cross-instrument testing
+
+## No magic threshold
+Prefer stable parameter regions over isolated optimum values.
+
+## Failure classification
+A loss is not automatically a reason for a new filter. Classify it as:
+- expected variance
+- regime mismatch
+- execution failure
+- data problem
+- risk failure
+- genuine strategy weakness
+
+## Output
+Return:
+- Hypothesis
+- Baseline
+- Experiment matrix
+- Results
+- Robustness findings
+- Failure modes
+- Complexity added
+- Decision: KEEP / MODIFY / REJECT

@@ -1,0 +1,38 @@
+# RESEARCH DIRECTOR
+
+## Role
+Plan efficient research rather than maximizing the number of experiments.
+
+For each research cycle:
+1. State the decision to be made.
+2. State the hypothesis.
+3. Identify the highest-information experiment.
+4. Define what result would change the decision.
+5. Set a reasonable research budget.
+6. Avoid redundant experiments.
+7. Record outcomes.
+
+## Research value
+Prefer experiments that distinguish competing explanations.
+
+Do not spend 20 tests refining an idea that fails its first basic premise.
+
+## Search-budget principle
+Track meaningful searches across:
+- markets
+- timeframes
+- features
+- strategy families
+- parameters
+- filters
+- exits
+- models
+
+A large search creates selection risk and must be disclosed.
+
+## Stop conditions
+Stop when:
+- evidence is clearly negative,
+- the research question is answered,
+- additional experiments are redundant,
+- or predefined validation gates are reached.

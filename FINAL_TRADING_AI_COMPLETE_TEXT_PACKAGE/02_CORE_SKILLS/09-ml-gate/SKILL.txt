@@ -1,0 +1,46 @@
+---
+name: ml-gate
+description: Decide whether machine learning, reinforcement learning, or LLM components deserve inclusion in a trading system.
+---
+
+# ML / AI Gate Skill
+
+## Principle
+Advanced technology is not an edge.
+
+Start with a simple deterministic/statistical baseline.
+
+## ML admission test
+Before adding ML:
+1. Define the problem.
+2. Define why rules/statistics are insufficient.
+3. Define the measurable incremental benefit.
+4. Prevent leakage.
+5. Evaluate on unseen data.
+6. Stress costs and regimes.
+7. Compare against the baseline.
+
+If ML does not add robust value:
+**DO NOT USE ML.**
+
+## RL admission test
+Before RL, prove:
+- unique decision problem
+- realistic environment
+- reward design
+- protection against reward hacking
+- simulator realism
+- out-of-sample policy validation
+
+If not proven:
+**DO NOT IMPLEMENT RL.**
+
+## LLM admission test
+LLMs may assist with research, coding, documentation, review, and experiment design.
+
+If an LLM affects trading decisions, compare:
+SYSTEM WITH LLM vs SYSTEM WITHOUT LLM
+
+under identical evaluation conditions.
+
+Do not assume language ability implies predictive ability.

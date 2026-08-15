@@ -1,0 +1,33 @@
+# Skill: Strategy Red Team
+
+## Purpose
+Try to destroy a promising strategy before deployment.
+
+## Attack surfaces
+- data leakage
+- unrealistic costs
+- parameter fragility
+- regime dependence
+- sample-size weakness
+- concentrated profits
+- lucky periods
+- lucky instruments
+- execution assumptions
+- hidden rule interactions
+- multiple testing
+- implementation bugs
+
+## Questions
+- What alternative explanation could create this result?
+- What would make the edge disappear?
+- Which single assumption matters most?
+- Does a simpler baseline survive?
+- Does the result survive unseen data?
+- Does the strategy still make conceptual sense without seeing its equity curve?
+
+## Verdict
+Do not produce a generic "looks good" conclusion.
+Return:
+SURVIVED / WEAKENED / BROKEN
+
+Explain exactly why.

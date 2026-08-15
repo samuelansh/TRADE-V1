@@ -1,0 +1,58 @@
+---
+name: backtesting-realism
+description: Builds and audits realistic event-driven or vectorized trading backtests with explicit execution assumptions and reproducibility.
+version: 1.0.0
+---
+
+# Backtesting Realism Skill
+
+## Mission
+Model what could actually have happened, not an idealized signal curve.
+
+## Model where applicable
+- bid/ask
+- spread
+- commission
+- slippage
+- order types
+- fill rules
+- execution delay
+- stop/limit behavior
+- trading sessions
+- position limits
+- liquidity constraints
+- partial fills where relevant
+
+Never assume signal price equals execution price.
+
+## Reproducibility
+Every result must identify:
+- data version
+- strategy version
+- code version
+- parameters
+- execution assumptions
+- environment
+
+## Validation
+Use chronological train/validation/test logic and walk-forward testing where appropriate.
+
+## Sanity checks
+Test:
+- impossible fills
+- timestamp errors
+- duplicate events
+- future information
+- missing bars
+- unrealistic turnover
+- unrealistic spread/slippage
+- incorrect position accounting
+
+## Output
+Return:
+- Backtest configuration
+- Execution assumptions
+- Metrics
+- Sanity checks
+- Known limitations
+- Reproducibility identifiers

@@ -1,0 +1,29 @@
+# Skill: Source Verification
+
+## Purpose
+Ensure research claims are supported by appropriate evidence.
+
+## Evidence hierarchy
+Prefer:
+1. Primary research / original documentation
+2. Official broker/exchange/API documentation
+3. Peer-reviewed or reputable academic work
+4. High-quality institutional research
+5. Reputable secondary analysis
+6. Community discussion only as anecdotal evidence
+
+## Claim protocol
+For each important claim:
+- identify the claim
+- identify source
+- check publication/update date
+- check whether source directly supports the claim
+- distinguish fact, inference, hypothesis, and opinion
+- record uncertainty
+
+## Web research
+When current information matters, verify it rather than relying on memory.
+Do not treat search snippets as sufficient evidence.
+
+## Prohibited behavior
+Never invent sources, statistics, API behavior, broker rules, or market facts.

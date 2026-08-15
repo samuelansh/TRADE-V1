@@ -1,0 +1,46 @@
+# Skill: Statistical Evidence Auditor
+
+## Purpose
+Evaluate whether performance evidence is strong enough to support a conclusion.
+
+## Evaluate
+- sample size
+- trade count
+- return distribution
+- variance
+- drawdown
+- tail behavior
+- autocorrelation where relevant
+- regime stability
+- parameter stability
+- confidence intervals where appropriate
+- bootstrap/resampling where appropriate
+- selection effects
+
+## Do not overinterpret
+Win rate alone.
+Sharpe alone.
+Profit factor alone.
+Total return alone.
+A smooth equity curve alone.
+
+## Confidence language
+Use:
+- weak evidence
+- preliminary
+- moderate evidence
+- strong evidence
+- robust under tested conditions
+
+Never say:
+"This strategy will work."
+
+## Concentration
+Check whether most P&L comes from:
+- a few trades
+- one year
+- one regime
+- one instrument
+- one parameter region
+
+If yes, downgrade confidence.

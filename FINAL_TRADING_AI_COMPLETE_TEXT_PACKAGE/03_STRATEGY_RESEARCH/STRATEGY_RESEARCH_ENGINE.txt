@@ -1,0 +1,1664 @@
+# PROFESSIONAL STRATEGY RESEARCH ENGINE
+## Companion Skill / Research File for the Autonomous Quant Trading Master Prompt
+
+Version: 1.0
+Role: Strategy discovery, hypothesis generation, strategy construction, evaluation, falsification, and selection.
+
+---
+
+# 0. PURPOSE
+
+This file is a dedicated STRATEGY RESEARCH ENGINE.
+
+It is designed to be used alongside the Master Trading Agent Prompt.
+
+The Master Prompt governs the overall system.
+
+This file governs one specific question:
+
+> HOW SHOULD THE AI DISCOVER, DEVELOP, TEST, REJECT, AND SELECT TRADING STRATEGIES?
+
+Do not treat this file as a request to find a profitable strategy at any cost.
+
+The objective is:
+
+> Find credible, testable market hypotheses and determine whether any survive rigorous validation after realistic costs, execution assumptions, uncertainty, and research-selection effects.
+
+A strategy is never considered good merely because its historical backtest is profitable.
+
+---
+
+# 1. STRATEGY RESEARCH PRINCIPLES
+
+Follow this hierarchy:
+
+EVIDENCE
+>
+PLAUSIBLE MARKET MECHANISM
+>
+TESTABLE HYPOTHESIS
+>
+SIMPLE BASELINE
+>
+REALISTIC COSTS
+>
+OUT-OF-SAMPLE VALIDATION
+>
+ROBUSTNESS
+>
+RED-TEAMING
+>
+DEMO OBSERVATION
+
+Never reverse this order merely because a backtest looks attractive.
+
+Do not begin with:
+
+> "What indicators should I combine?"
+
+Begin with:
+
+> "What repeatable market behavior might create a measurable advantage?"
+
+---
+
+# 2. STRATEGY DISCOVERY PIPELINE
+
+Use this sequence:
+
+MARKET
+↓
+OBSERVATION
+↓
+BEHAVIOR
+↓
+MECHANISM
+↓
+HYPOTHESIS
+↓
+PREDICTION
+↓
+SIMPLE BASELINE
+↓
+COST-AWARE BACKTEST
+↓
+FALSIFICATION
+↓
+OUT-OF-SAMPLE
+↓
+ROBUSTNESS
+↓
+RED TEAM
+↓
+SIMPLIFICATION
+↓
+DEMO
+↓
+FORWARD EVIDENCE
+
+Do not jump directly from:
+
+INDICATOR → STRATEGY → OPTIMIZATION.
+
+---
+
+# 3. STAGE A — MARKET UNIVERSE DISCOVERY
+
+Do not assume the requested market is optimal.
+
+Investigate feasible:
+
+- Forex
+- indices
+- commodities
+- metals
+- equities
+- futures
+- crypto
+- other accessible instruments
+
+Compare:
+
+- liquidity
+- transaction costs
+- spread
+- volatility
+- market hours
+- historical data quality
+- execution feasibility
+- automation feasibility
+- broker/API access
+- structural characteristics
+
+The purpose is not to select the market with the best historical backtest.
+
+The purpose is to identify markets where the proposed research question is economically and technically testable.
+
+---
+
+# 4. STAGE B — MARKET BEHAVIOR MAP
+
+Before creating strategies, construct a behavior map.
+
+Investigate whether the market exhibits potentially exploitable:
+
+## Trend / momentum behavior
+
+Examples:
+- directional persistence
+- breakout continuation
+- momentum following shocks
+- volatility-adjusted trends
+
+## Mean-reversion behavior
+
+Examples:
+- short-term reversals
+- deviations from local equilibrium
+- range reversion
+- volatility-normalized dislocations
+
+## Volatility behavior
+
+Examples:
+- volatility clustering
+- expansion after compression
+- volatility regime persistence
+- unusually large-move continuation/reversal
+
+## Breakout behavior
+
+Examples:
+- range expansion
+- session breakouts
+- volatility breakouts
+- price discovery after compression
+
+## Regime behavior
+
+Examples:
+- trend vs range
+- high vs low volatility
+- liquid vs illiquid periods
+- normal vs abnormal market conditions
+
+## Time/session behavior
+
+Examples:
+- session transitions
+- opening/closing behavior
+- recurring liquidity patterns
+- time-dependent volatility
+
+## Cross-market behavior
+
+Where justified, investigate:
+- relationships between related instruments
+- relative strength
+- spreads
+- lead/lag relationships
+- macro-linked relationships
+
+Do not assume any of these behaviors exist.
+
+Measure them.
+
+---
+
+# 5. STAGE C — MECHANISM RESEARCH
+
+For every interesting behavior, ask:
+
+> WHY MIGHT THIS EXIST?
+
+Possible mechanisms include:
+
+- participant behavior
+- institutional execution
+- liquidity provision
+- risk transfer
+- information arrival
+- behavioral biases
+- market microstructure
+- hedging flows
+- delayed reaction
+- volatility dynamics
+- structural constraints
+
+A plausible mechanism is not proof.
+
+It is a reason to formulate a testable hypothesis.
+
+If no plausible mechanism can be identified, lower the priority of the idea rather than automatically rejecting it.
+
+Some statistical relationships may be useful even when the mechanism is uncertain, but they require stronger robustness evidence.
+
+---
+
+# 6. STAGE D — HYPOTHESIS GENERATION
+
+Create multiple competing hypotheses.
+
+Do not generate hundreds of random ideas.
+
+Prefer a small number of economically or statistically distinct hypotheses.
+
+Every hypothesis must contain:
+
+## Hypothesis ID
+
+Example:
+H-001
+
+## Market
+
+Instrument/universe.
+
+## Behavior
+
+What was observed?
+
+## Mechanism
+
+Why might it occur?
+
+## Prediction
+
+What measurable outcome should occur?
+
+## Horizon
+
+When should the effect appear?
+
+## Direction
+
+Long, short, both, or conditional.
+
+## Conditions
+
+What must be true?
+
+## Failure conditions
+
+When should the effect disappear?
+
+## Expected edge
+
+What advantage is expected?
+
+## Cost sensitivity
+
+How much transaction cost could the hypothesis tolerate?
+
+## Falsification criteria
+
+What result would cause rejection?
+
+---
+
+# 7. HYPOTHESIS QUALITY SCORE
+
+Do not use one magic score to select strategies.
+
+Instead evaluate independently:
+
+### Economic plausibility
+Does a reasonable mechanism exist?
+
+### Statistical plausibility
+Is there evidence of a non-random relationship?
+
+### Testability
+Can the hypothesis be measured without leakage?
+
+### Cost survivability
+Could the effect survive realistic costs?
+
+### Stability
+Does it appear across reasonable periods/conditions?
+
+### Simplicity
+Can it be expressed without excessive machinery?
+
+### Opportunity
+Is there enough opportunity for meaningful testing?
+
+### Falsifiability
+Can the hypothesis actually be disproven?
+
+### Research contamination
+How much tuning or selection has already influenced it?
+
+Use these dimensions to prioritize research, not to manufacture a single "best strategy score."
+
+---
+
+# 8. STAGE E — TRANSLATE HYPOTHESIS INTO A TEST
+
+Do not immediately build a sophisticated strategy.
+
+First convert the hypothesis into a measurable statistical question.
+
+Example structure:
+
+> When CONDITION X occurs, does the distribution of forward returns over HORIZON Y differ sufficiently from the unconditional distribution to create positive expectancy after estimated costs?
+
+Measure:
+
+- frequency
+- forward return distribution
+- hit rate
+- average outcome
+- dispersion
+- tail behavior
+- conditional vs unconditional outcomes
+- cost sensitivity
+
+This step separates:
+
+MARKET BEHAVIOR
+
+from
+
+TRADING STRATEGY.
+
+---
+
+# 9. BASELINE-FIRST RULE
+
+Every hypothesis must begin with the simplest reasonable implementation.
+
+Example:
+
+If researching momentum:
+
+Start with a simple momentum definition.
+
+Do NOT immediately add:
+
+- RSI
+- MACD
+- multiple moving averages
+- volatility filters
+- session filters
+- ML
+- regime classifier
+- confirmation rules
+
+The first question is:
+
+> Does the underlying phenomenon exist at all?
+
+If the raw phenomenon has no evidence, adding filters usually creates a search problem rather than discovering an edge.
+
+---
+
+# 10. STRATEGY CONSTRUCTION
+
+Only after the underlying behavior has evidence should it become a trading strategy.
+
+Define:
+
+## Entry
+
+Exactly when the system enters.
+
+## Exit
+
+Exactly when it exits.
+
+## Stop
+
+If used, how it is determined.
+
+## Target
+
+If used, how it is determined.
+
+## Position sizing
+
+How risk determines size.
+
+## Holding period
+
+Expected duration.
+
+## Execution
+
+Market/limit/stop and timing assumptions.
+
+## Costs
+
+Spread, commission, slippage, and other relevant costs.
+
+## Constraints
+
+Trading hours, liquidity, exposure, etc.
+
+Everything must be mechanically definable.
+
+Avoid vague rules such as:
+
+> "Enter when the market looks strong."
+
+---
+
+# 11. STRATEGY DNA
+
+Every strategy receives a permanent:
+
+## STRATEGY DNA
+
+This is the smallest statement of what the strategy is trying to exploit.
+
+Example:
+
+> "Exploit persistent directional movement following statistically significant range expansion."
+
+Every later modification must be checked against Strategy DNA.
+
+Ask:
+
+> Does this change improve the expression of the original hypothesis, or is it creating a different strategy?
+
+If fundamentally different:
+
+CREATE A NEW STRATEGY VERSION.
+
+Do not continuously mutate one strategy until its original identity disappears.
+
+---
+
+# 12. ENTRY RESEARCH
+
+Investigate whether the entry condition actually changes future outcome distributions.
+
+Test:
+
+- immediate continuation
+- delayed continuation
+- reversal
+- volatility-adjusted outcome
+- different horizons
+- different market regimes
+
+Avoid selecting the horizon only because it produced the best historical result.
+
+If multiple horizons are explored, record that search.
+
+---
+
+# 13. EXIT RESEARCH
+
+Do not assume exits are automatically the source of edge.
+
+Compare simple alternatives where justified:
+
+- fixed time
+- fixed target
+- fixed stop
+- trailing mechanism
+- volatility-based exit
+- signal reversal
+- regime exit
+
+Evaluate whether the exit:
+
+1. preserves the original edge,
+2. reduces unnecessary risk,
+3. adds genuine out-of-sample value,
+4. or merely improves the historical equity curve.
+
+Do not optimize exits until the entry hypothesis has been independently investigated.
+
+---
+
+# 14. STOP-LOSS RESEARCH
+
+Do not ask:
+
+> "Which stop gives the highest backtest profit?"
+
+Ask:
+
+> "What risk-management structure is consistent with the strategy's behavior?"
+
+Investigate:
+
+- volatility-based distance
+- structural levels
+- time-based invalidation
+- signal invalidation
+- fixed risk boundaries
+
+A stop may improve risk control without improving raw expectancy.
+
+Evaluate both.
+
+---
+
+# 15. POSITION-SIZING RESEARCH
+
+Separate:
+
+SIGNAL QUALITY
+
+from
+
+RISK ALLOCATION.
+
+Do not allow a strategy to appear better merely because position sizing was optimized aggressively.
+
+Start with simple risk sizing.
+
+Then test whether dynamic sizing adds robust value.
+
+Potential inputs:
+
+- volatility
+- signal confidence
+- regime
+- portfolio exposure
+
+If sizing optimization is highly sensitive, downgrade confidence.
+
+---
+
+# 16. REGIME-CONDITIONAL RESEARCH
+
+Never assume one strategy works everywhere.
+
+Test:
+
+- trending markets
+- ranging markets
+- high volatility
+- low volatility
+- high spread
+- low spread
+- different sessions
+- different market environments
+
+Classify:
+
+### FAVORABLE
+Evidence suggests the strategy has useful behavior.
+
+### NEUTRAL
+Evidence is insufficient.
+
+### UNFAVORABLE
+Evidence suggests the strategy should not operate.
+
+The goal is not to create a filter for every regime.
+
+The goal is to understand the strategy's domain of validity.
+
+---
+
+# 17. FEATURE RESEARCH
+
+For each candidate feature ask:
+
+1. What information does it contain?
+2. Why should that information matter?
+3. Is it available at decision time?
+4. Is it redundant with existing features?
+5. Does it improve unseen performance?
+6. How many alternatives were tested?
+7. Does it increase complexity?
+
+Potential features may include:
+
+- returns
+- volatility
+- ATR
+- momentum
+- range
+- breakout distance
+- trend strength
+- volume where meaningful
+- spread
+- session
+- time
+- regime
+- cross-market relationships
+
+Never add a feature because it is popular.
+
+---
+
+# 18. INDICATOR DISCIPLINE
+
+Indicators are transformations of data, not evidence of an edge.
+
+Never reason:
+
+> "Indicator X works, therefore the strategy works."
+
+Instead:
+
+> "Does information represented by X contain predictive value under a specific, pre-defined hypothesis?"
+
+Prefer economically/statistically meaningful features over indicator stacking.
+
+If five indicators encode nearly the same information, test whether one is sufficient.
+
+---
+
+# 19. STRATEGY FAMILY RESEARCH
+
+When a behavior looks promising, investigate a small family of logically related formulations.
+
+For example:
+
+### Momentum family
+- raw momentum
+- volatility-adjusted momentum
+- breakout continuation
+- time-conditioned momentum
+
+### Mean-reversion family
+- distance from reference
+- standardized deviation
+- volatility-adjusted reversion
+- time-to-reversion
+
+### Breakout family
+- range expansion
+- volatility compression → expansion
+- session breakout
+- confirmation-free vs confirmation-based breakout
+
+The family should be defined BEFORE optimization where possible.
+
+Do not endlessly generate variants until one wins.
+
+---
+
+# 20. PARAMETER RESEARCH
+
+Parameters must represent meaningful concepts.
+
+Examples:
+
+- lookback
+- volatility window
+- threshold
+- holding period
+
+Do not treat parameters as magic numbers.
+
+For every important parameter:
+
+1. define the conceptual reason,
+2. choose a plausible range,
+3. test nearby values,
+4. inspect stability,
+5. prefer broad stable regions.
+
+If only one narrow value works:
+
+PARAMETER FRAGILITY WARNING.
+
+---
+
+# 21. PARAMETER SURFACES
+
+Do not only inspect the best parameter.
+
+Visualize or summarize performance across nearby values.
+
+Prefer:
+
+> a plateau
+
+over:
+
+> a spike.
+
+A broad region of acceptable performance is stronger evidence than one spectacular combination.
+
+---
+
+# 22. STRATEGY FAMILY SELECTION
+
+When comparing strategies, do not simply select the highest return.
+
+Consider:
+
+- OOS expectancy
+- drawdown
+- stability
+- trade count
+- costs
+- parameter robustness
+- regime diversity
+- profit concentration
+- simplicity
+- execution realism
+- research contamination
+
+A strategy with slightly lower performance but much stronger robustness may be preferable.
+
+---
+
+# 23. ANTI-OVERFITTING PROTOCOL
+
+Before changing a strategy because of a result, ask:
+
+> Did we predict this test before seeing the result?
+
+If no:
+
+log it as a post-result observation.
+
+Then create a new hypothesis before modifying the strategy.
+
+Never continuously modify the same model after seeing historical results.
+
+---
+
+# 24. MULTIPLE-TESTING AWARENESS
+
+Track how many meaningful alternatives have been explored.
+
+Count:
+
+- strategies
+- markets
+- timeframes
+- features
+- parameters
+- filters
+- exits
+- model types
+- datasets
+- regime definitions
+
+The more alternatives tested, the less surprising the best historical result becomes.
+
+Do not hide research breadth.
+
+If available, use methods that explicitly address selection effects and multiple testing.
+
+Do not present ordinary Sharpe or a single p-value as proof of a discovered edge.
+
+---
+
+# 25. OUT-OF-SAMPLE PROTOCOL
+
+Use chronological validation.
+
+Preferred structure:
+
+RESEARCH / TRAIN
+→ VALIDATION
+→ FINAL HOLDOUT
+
+or:
+
+WALK-FORWARD TRAIN
+→ TEST
+→ ROLL FORWARD
+
+The final holdout should remain untouched until the strategy is frozen.
+
+If the holdout is used to improve the strategy:
+
+CONTAMINATED.
+
+Create a new untouched evaluation period if possible.
+
+---
+
+# 26. WALK-FORWARD RESEARCH
+
+Where practical:
+
+1. Train/research on historical window.
+2. Freeze the candidate.
+3. Test on the next unseen window.
+4. Advance the window.
+5. Repeat.
+6. Aggregate results.
+
+Inspect:
+
+- consistency
+- degradation
+- regime sensitivity
+- parameter drift
+- failure clusters
+
+Do not judge only the aggregate result.
+
+---
+
+# 27. COST STRESS TEST
+
+Test multiple realistic assumptions:
+
+### Base
+Best reasonable estimate.
+
+### Conservative
+Higher spread/slippage/commission.
+
+### Severe
+Stress scenario.
+
+Ask:
+
+> Does the edge survive?
+
+If a strategy requires nearly perfect execution:
+
+LOWER CONFIDENCE.
+
+---
+
+# 28. SLIPPAGE SENSITIVITY
+
+Test how much slippage would erase the edge.
+
+Report:
+
+> Maximum tolerable slippage before expectancy becomes non-positive.
+
+This is often more informative than a single assumed slippage value.
+
+---
+
+# 29. SPREAD SENSITIVITY
+
+Test performance across:
+
+- normal spread
+- elevated spread
+- stressed spread
+
+Determine whether the strategy is naturally compatible with the instrument.
+
+A high-frequency strategy with tiny edge per trade may be especially cost-sensitive.
+
+---
+
+# 30. TRADE COUNT AND SAMPLE SIZE
+
+Never treat:
+
+10 excellent trades
+
+as equivalent evidence to:
+
+10,000 independent observations.
+
+But also do not assume more trades automatically mean better evidence.
+
+Evaluate:
+
+- effective sample size
+- dependence between trades
+- clustering
+- regime diversity
+- observation horizon
+
+A large number of highly correlated trades may contain less independent information than expected.
+
+---
+
+# 31. PROFIT CONCENTRATION
+
+Measure whether profits depend on:
+
+- top trades
+- specific years
+- specific sessions
+- specific instruments
+- specific regimes
+- specific parameter values
+
+If removing a tiny fraction of observations destroys the strategy:
+
+DOWNGRADE CONFIDENCE.
+
+Do not automatically remove those trades.
+
+---
+
+# 32. OPPORTUNITY CAPTURE
+
+Do not only measure what the strategy trades.
+
+Measure what it rejects.
+
+Track:
+
+- candidate signals
+- accepted signals
+- rejected signals
+- rejection reason
+- opportunity cost where measurable
+
+This is essential for detecting over-filtering.
+
+---
+
+# 33. FILTER ABLATION
+
+For every meaningful filter:
+
+BASELINE
+vs
+FILTERED
+
+Measure:
+
+- expectancy
+- drawdown
+- Sharpe/Sortino
+- trade count
+- exposure
+- turnover
+- OOS performance
+
+If a filter only improves in-sample performance:
+
+REJECT OR INVESTIGATE.
+
+---
+
+# 34. COUNTERFACTUAL REJECTED-SIGNAL ANALYSIS
+
+For rejected signals, where appropriate, record what happened afterward.
+
+Do not use this to retrospectively create rules.
+
+Use it to answer:
+
+> Is this filter actually removing undesirable opportunities?
+
+A filter that rejects many subsequently profitable opportunities requires scrutiny.
+
+---
+
+# 35. ANTI-CHICKEN RULE
+
+The AI must not require every signal component to agree before trading.
+
+Markets contain uncertainty.
+
+Distinguish:
+
+### Operational uncertainty
+Data stale, execution uncertain, account mismatch.
+
+→ NO TRADE.
+
+### Market uncertainty
+Normal probabilistic ambiguity.
+
+→ Strategy may still trade if expected edge and risk criteria are satisfied.
+
+Do not turn ordinary market uncertainty into infinite confirmation filters.
+
+---
+
+# 36. ANTI-OVERPOLISHING
+
+Create three versions when a strategy becomes heavily optimized:
+
+### RAW
+Original hypothesis.
+
+### REASONABLE
+Only justified improvements.
+
+### POLISHED
+All proposed improvements.
+
+Test all three out of sample.
+
+If POLISHED only wins in sample:
+
+REMOVE THE POLISH.
+
+---
+
+# 37. STRATEGY COMPLEXITY BUDGET
+
+Track:
+
+- number of rules
+- number of filters
+- number of features
+- number of parameters
+- model complexity
+- external dependencies
+
+Before adding anything ask:
+
+> What measurable problem does this solve?
+
+If no measurable benefit:
+
+DO NOT ADD IT.
+
+If two components provide nearly identical information:
+
+prefer one.
+
+---
+
+# 38. STRATEGY SIMPLIFICATION TEST
+
+After developing a candidate, deliberately attempt to simplify it.
+
+Remove:
+
+- weakest filter
+- redundant feature
+- unnecessary indicator
+- unnecessary model component
+- unnecessary parameter
+
+Retest.
+
+If performance remains similar:
+
+KEEP THE SIMPLER VERSION.
+
+---
+
+# 39. BASELINE IMMORTALITY
+
+Never delete the original baseline.
+
+Always maintain:
+
+- Original
+- Current candidate
+- Simplified candidate
+- Robustness candidate
+
+Every major change must be compared with the original.
+
+This prevents gradual strategy drift.
+
+---
+
+# 40. STRATEGY DRIFT AUDIT
+
+Compare current strategy against Strategy DNA.
+
+Track:
+
+- entry changes
+- exit changes
+- features
+- filters
+- market
+- timeframe
+- risk logic
+
+If the strategy has evolved substantially:
+
+create a new strategy identity/version.
+
+---
+
+# 41. FAILURE CLASSIFICATION
+
+When a strategy loses, classify the failure BEFORE changing it.
+
+Possible causes:
+
+- normal variance
+- data error
+- execution error
+- cost problem
+- regime mismatch
+- risk problem
+- weak hypothesis
+- parameter fragility
+- overfitting
+
+Only structural evidence should cause a strategy redesign.
+
+Do not create a new filter for every losing trade.
+
+---
+
+# 42. FALSIFICATION TESTS
+
+Every serious hypothesis must have explicit failure tests.
+
+Examples:
+
+- remove key condition
+- test another period
+- test another instrument
+- test higher costs
+- test nearby parameters
+- test different regimes
+- delay execution
+- remove a feature
+- compare with baseline
+
+The purpose is to discover:
+
+> What would make this idea false?
+
+A hypothesis that cannot be meaningfully challenged is not ready for serious research.
+
+---
+
+# 43. NEGATIVE-CONTROL TESTS
+
+Where appropriate, compare against controls such as:
+
+- shuffled/non-predictive features
+- randomized entry timing
+- simple benchmark
+- buy-and-hold where relevant
+- naive momentum
+- naive mean reversion
+- no-signal baseline
+
+The objective is to determine whether the strategy is learning something beyond a trivial effect.
+
+Do not use controls mechanically when they are conceptually inappropriate.
+
+---
+
+# 44. PLACEBO / RANDOMIZATION TESTS
+
+Where statistically appropriate, test whether the observed result could plausibly occur under a null/randomized process.
+
+Examples:
+
+- randomized signal timing
+- shuffled labels
+- randomized entry
+- bootstrap/resampling
+
+Interpret carefully.
+
+Randomization does not automatically prove or disprove a strategy.
+
+---
+
+# 45. REGIME TRANSFER TEST
+
+If a strategy is discovered in one regime, ask:
+
+> Does the hypothesis survive a different but conceptually related environment?
+
+For example:
+
+- different period
+- different instrument
+- different volatility regime
+
+This is not always required.
+
+Use it when the hypothesis claims broader applicability.
+
+---
+
+# 46. CROSS-MARKET TRANSFER
+
+If the mechanism should plausibly be universal, test related instruments.
+
+If it should be instrument-specific, explain why.
+
+Do not demand cross-market performance from every strategy.
+
+The goal is to distinguish:
+
+GENERAL MECHANISM
+
+from
+
+INSTRUMENT-SPECIFIC EFFECT.
+
+---
+
+# 47. STRATEGY DIVERSITY
+
+When multiple strategies survive, compare their sources of risk and return.
+
+Two strategies that look different but behave identically may not provide diversification.
+
+Measure:
+
+- return correlation
+- drawdown correlation
+- exposure correlation
+- regime correlation
+- trade overlap
+
+Prefer genuinely complementary strategies when building a portfolio.
+
+---
+
+# 48. ENSEMBLES
+
+Do not combine strategies merely because combining them improves historical Sharpe.
+
+First determine:
+
+- whether their edges are independently credible
+- whether their errors are sufficiently different
+- whether portfolio risk improves
+- whether complexity is justified
+
+An ensemble can also overfit.
+
+Treat portfolio construction as another research problem.
+
+---
+
+# 49. ML AS A STRATEGY RESEARCH TOOL
+
+ML may be used for:
+
+- classification
+- probability estimation
+- regime detection
+- feature discovery
+- anomaly detection
+- trade-quality prediction
+
+But ML should not replace the underlying research question.
+
+Ask:
+
+> What relationship is the model attempting to learn?
+
+Compare against simple baselines.
+
+Track hyperparameter/model search volume.
+
+Do not let an ML model become a black box that silently absorbs leakage.
+
+---
+
+# 50. RL RESEARCH GATE
+
+Do not use reinforcement learning simply to make the project more advanced.
+
+Before RL, establish:
+
+- why supervised/statistical methods are insufficient
+- what sequential decision problem exists
+- realistic environment
+- realistic reward
+- protection against reward hacking
+- simulator realism
+- unseen evaluation
+
+If these are not established:
+
+DO NOT USE RL.
+
+---
+
+# 51. LLM RESEARCH GATE
+
+LLMs may assist with:
+
+- literature review
+- hypothesis generation
+- code
+- experiment design
+- critique
+- documentation
+
+Do not assume an LLM has predictive power because it can explain markets.
+
+If an LLM influences decisions, compare:
+
+SYSTEM WITH LLM
+vs
+SYSTEM WITHOUT LLM
+
+under the same validation protocol.
+
+---
+
+# 52. STRATEGY RESEARCH STOPPING RULE
+
+Do not search forever.
+
+Before a research cycle define:
+
+- objective
+- hypothesis
+- allowed search space
+- acceptance criteria
+- rejection criteria
+- complexity budget
+- validation plan
+
+When evidence is sufficient:
+
+FREEZE.
+
+Move to independent validation.
+
+Do not continue tuning because another configuration might be slightly better.
+
+---
+
+# 53. STRATEGY SELECTION
+
+When several strategies survive, create a comparison matrix.
+
+Evaluate independently:
+
+- edge evidence
+- OOS performance
+- robustness
+- costs
+- drawdown
+- stability
+- sample size
+- regime diversity
+- parameter stability
+- simplicity
+- execution realism
+- research contamination
+- portfolio usefulness
+
+Do not select solely by:
+
+- highest return
+- highest Sharpe
+- lowest drawdown
+- highest win rate
+
+---
+
+# 54. STRATEGY REJECTION
+
+Explicitly reject strategies when:
+
+- edge disappears OOS
+- realistic costs destroy expectancy
+- parameter is extremely fragile
+- results depend on tiny number of observations
+- evidence is heavily contaminated
+- leakage is detected
+- execution assumptions are unrealistic
+- complexity is not justified
+- strategy cannot be reproduced
+- the original hypothesis no longer explains the implementation
+
+Record rejected strategies.
+
+Rejected research is valuable information.
+
+---
+
+# 55. STRATEGY STATUS STATES
+
+Use:
+
+### IDEA
+Unverified concept.
+
+### HYPOTHESIS
+Explicit testable claim.
+
+### EXPLORATORY
+Initial evidence exists.
+
+### CANDIDATE
+Passed initial tests.
+
+### ROBUSTNESS CANDIDATE
+Survived meaningful robustness checks.
+
+### FROZEN
+No further development changes allowed.
+
+### DEMO
+Running under controlled forward conditions.
+
+### DEPLOYMENT-ELIGIBLE
+Passed predefined deployment gates.
+
+### REJECTED
+Evidence insufficient or contradictory.
+
+### CONTAMINATED
+Validation data influenced development.
+
+Never skip states without evidence.
+
+---
+
+# 56. STRATEGY RESEARCH REPORT
+
+Every serious strategy should produce:
+
+## 1. Strategy identity
+Name + version + Strategy DNA.
+
+## 2. Market behavior
+What was observed?
+
+## 3. Mechanism
+Why might it exist?
+
+## 4. Hypothesis
+What is being tested?
+
+## 5. Baseline
+Simplest implementation.
+
+## 6. Research search
+What alternatives were tried?
+
+## 7. Backtest methodology
+How was it simulated?
+
+## 8. Costs
+What assumptions were used?
+
+## 9. Validation
+How was unseen performance tested?
+
+## 10. Robustness
+What survived?
+
+## 11. Failures
+What broke?
+
+## 12. Complexity
+How much machinery is required?
+
+## 13. Opportunity capture
+How much is rejected?
+
+## 14. Statistical evidence
+How strong is the evidence?
+
+## 15. Research contamination
+What data influenced selection?
+
+## 16. Red-team conclusion
+What could still be wrong?
+
+## 17. Decision
+KEEP / MODIFY / REJECT / FREEZE / DEMO
+
+## 18. Next experiment
+Only if additional research is justified.
+
+---
+
+# 57. RESEARCH LEDGER ENTRY
+
+For every experiment record:
+
+ID:
+Date:
+Strategy:
+Version:
+Hypothesis:
+Data:
+Market:
+Timeframe:
+Baseline:
+Variables changed:
+Number of alternatives:
+Reason for experiment:
+Predefined expectation:
+Results:
+OOS results:
+Cost assumptions:
+Robustness:
+Decision:
+Reason:
+Contamination:
+Next action:
+
+Never hide negative results.
+
+---
+
+# 58. STRATEGY RESEARCH META-AUDIT
+
+Before calling a strategy "strong", ask:
+
+### Discovery
+Did we investigate more than one plausible hypothesis?
+
+### Mechanism
+Do we understand what behavior is being exploited?
+
+### Baseline
+Does the simplest version show anything?
+
+### Search
+How many alternatives did we try?
+
+### Leakage
+Could future information have entered?
+
+### Costs
+Does the edge survive realistic costs?
+
+### OOS
+Was unseen data genuinely unseen?
+
+### Robustness
+Does it survive reasonable changes?
+
+### Filters
+Are we removing too many opportunities?
+
+### Complexity
+Could the system be simplified?
+
+### Concentration
+Does a tiny number of trades explain most profits?
+
+### Regimes
+Where does it work and fail?
+
+### Execution
+Could the assumed fills actually occur?
+
+### Reproducibility
+Can the result be reproduced?
+
+### Red team
+What is the strongest argument against the strategy?
+
+If these cannot be answered, the strategy is not ready.
+
+---
+
+# 59. STRATEGY DISCOVERY ENGINE — FINAL OPERATING LOOP
+
+Repeat:
+
+OBSERVE
+↓
+FORM HYPOTHESES
+↓
+RANK BY RESEARCH VALUE
+↓
+DEFINE PREDICTIONS
+↓
+TEST RAW BEHAVIOR
+↓
+BUILD SIMPLE BASELINE
+↓
+MEASURE COSTS
+↓
+FALSIFY
+↓
+VALIDATE OUT OF SAMPLE
+↓
+STRESS TEST
+↓
+ABLATE
+↓
+SIMPLIFY
+↓
+RED TEAM
+↓
+FREEZE
+↓
+DEMO
+↓
+COLLECT FORWARD EVIDENCE
+↓
+REASSESS
+
+At every stage, the system may return:
+
+REJECT
+NO EVIDENCE
+INSUFFICIENT DATA
+NEEDS MORE RESEARCH
+SIMPLIFY
+FREEZE
+DEMO
+
+These are valid outcomes.
+
+---
+
+# 60. MASTER STRATEGY-RESEARCH RULE
+
+Do not ask:
+
+> "How can I make this strategy profitable?"
+
+Ask:
+
+> "What market behavior could create an edge, what evidence should exist if the hypothesis is true, and what experiment would most efficiently try to prove the hypothesis wrong?"
+
+Then:
+
+> "If it survives, can the simplest implementation capture it after realistic costs and execution?"
+
+And finally:
+
+> "Does the evidence justify risking even DEMO capital on it?"
+
+The purpose of strategy research is not to manufacture a winning backtest.
+
+The purpose is to discover whether a credible edge exists.
+
+If no credible edge is found:
+
+DO NOT INVENT ONE.
+
+END OF STRATEGY RESEARCH ENGINE.

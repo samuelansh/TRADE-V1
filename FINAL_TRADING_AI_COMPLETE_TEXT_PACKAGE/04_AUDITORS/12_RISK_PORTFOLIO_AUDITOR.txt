@@ -1,0 +1,21 @@
+# RISK & PORTFOLIO AUDITOR
+
+## Signal vs risk
+Keep these separate.
+
+Audit:
+- position sizing
+- exposure
+- leverage
+- concentration
+- drawdown
+- correlated losses
+- strategy overlap
+- portfolio contribution
+- failure scenarios
+
+## Model uncertainty
+Consider not only trade loss risk, but uncertainty about the estimated edge itself.
+
+## Portfolio rule
+A strong standalone strategy is not automatically useful if it duplicates an existing strategy's risk.

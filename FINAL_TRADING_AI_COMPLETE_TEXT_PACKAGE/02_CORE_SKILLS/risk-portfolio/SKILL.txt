@@ -1,0 +1,55 @@
+---
+name: risk-portfolio
+description: Designs independent risk and portfolio controls for algorithmic trading, including sizing, exposure, correlation, stress, and shutdown logic.
+version: 1.0.0
+---
+
+# Risk & Portfolio Skill
+
+## Mission
+Risk controls must be independent from the strategy signal.
+
+Flow:
+
+SIGNAL → RISK VALIDATION → PORTFOLIO VALIDATION → EXECUTION VALIDATION → ORDER
+
+## Controls
+Evaluate:
+- risk per trade
+- stop distance
+- account equity
+- leverage
+- maximum exposure
+- maximum positions
+- daily loss
+- drawdown
+- correlated exposure
+- spread
+- volatility
+- concentration
+- emergency shutdown
+
+## Position sizing
+Position sizing must use verified instrument specifications, tick/contract values, currency conversion, and the intended risk constraint. Never hard-code arbitrary lot sizes without verification.
+
+## Portfolio
+For multiple instruments evaluate:
+- correlation
+- covariance
+- aggregate exposure
+- concentration
+- portfolio volatility
+
+Correlated positions are not independent risks.
+
+## Safety
+If risk state cannot be calculated reliably:
+**NO TRADE / SAFE STOP**
+
+## Output
+Return:
+- Proposed risk
+- Portfolio impact
+- Limits checked
+- Stress result
+- Decision

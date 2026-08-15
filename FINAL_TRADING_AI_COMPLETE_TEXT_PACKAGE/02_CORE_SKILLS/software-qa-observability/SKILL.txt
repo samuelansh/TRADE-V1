@@ -1,0 +1,82 @@
+---
+name: software-qa-observability
+description: Provides professional software engineering, testing, observability, reproducibility, and failure-recovery practices for trading systems.
+version: 1.0.0
+---
+
+# Software QA & Observability Skill
+
+## Mission
+Trading software must fail safely, be testable, and be diagnosable.
+
+## Architecture
+Prefer modular components:
+- data
+- research
+- strategy
+- backtest
+- risk
+- portfolio
+- execution
+- monitoring
+- configuration
+
+Avoid monolithic scripts.
+
+## Testing
+Use:
+- unit tests
+- integration tests
+- regression tests
+- data-quality tests
+- execution-simulation tests
+- failure-injection tests
+- configuration tests
+
+## Failure injection
+Test:
+- stale data
+- missing data
+- disconnects
+- invalid symbols
+- rejected orders
+- duplicate signals
+- duplicate orders
+- restart/recovery
+- account mismatch
+- abnormal spreads
+- invalid configuration
+
+## Observability
+Log structured events with:
+- timestamp
+- component
+- event type
+- severity
+- correlation/request ID
+- relevant state
+- outcome
+
+Never log secrets.
+
+## Reproducibility
+Record:
+- code version
+- environment
+- dependency versions
+- data version
+- configuration
+- experiment ID
+
+## Safe failure
+When critical state is uncertain:
+**NO TRADE / SAFE STOP**
+
+## Output
+Return:
+- tests executed
+- failures
+- regressions
+- observability gaps
+- recovery behavior
+- release recommendation

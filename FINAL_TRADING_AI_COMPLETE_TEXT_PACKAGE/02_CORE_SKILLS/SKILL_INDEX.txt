@@ -1,0 +1,28 @@
+# Professional Trading-Agent Skill Pack
+
+These are intentionally modular skills. They are designed to be loaded selectively by an AI agent rather than pasted into one giant prompt.
+
+## Skills
+
+1. `research-director` — prioritizes research and experiments.
+2. `source-research` — professional evidence gathering and source verification.
+3. `quant-strategy-research` — strategy hypothesis design and validation.
+4. `anti-overfitting` — curve-fitting and research-process red team.
+5. `backtesting-realism` — realistic simulation and reproducibility.
+6. `risk-portfolio` — independent risk and portfolio controls.
+7. `mt5-demo-execution` — safe MT5 DEMO execution and reconciliation.
+8. `anti-overengineering` — anti-filtering, anti-cowardice, opportunity-cost discipline.
+9. `agent-self-audit` — audits the agent/prompt/methodology itself.
+10. `skill-manager` — discovers, verifies, versions, and retires skills.
+11. `software-qa-observability` — testing, failure injection, logging, reproducibility.
+12. `decision-review` — builder/skeptic/risk-officer final review.
+
+## Loading rule
+
+Do not load every skill for every task. Select the smallest set that covers the current task.
+
+The skill-manager should periodically check whether the skill set itself has become redundant or over-engineered.
+
+## Design principle
+
+The skill pack complements the master prompt. It should not silently replace source material. When an existing project document is authoritative, preserve its terminology and intent and explicitly distinguish any new additions.

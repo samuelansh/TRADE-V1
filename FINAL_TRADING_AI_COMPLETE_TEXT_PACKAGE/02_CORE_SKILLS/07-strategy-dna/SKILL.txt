@@ -1,0 +1,56 @@
+---
+name: strategy-dna
+description: Preserve the original trading hypothesis, detect strategy drift, compare baselines, and prevent incremental overengineering.
+---
+
+# Strategy DNA Skill
+
+## Objective
+Ensure that a strategy remains connected to its original economic/market hypothesis.
+
+## Strategy DNA
+Every strategy must have a concise original statement:
+- market behavior
+- mechanism
+- expected edge
+- expected failure conditions
+
+## Every modification asks
+> Does this strengthen the original hypothesis, or has the strategy become something fundamentally different?
+
+If substantially different:
+create a new strategy version.
+
+## Baseline immortality
+Never delete the original baseline.
+
+Maintain:
+- original baseline
+- current candidate
+- simplified candidate
+- robustness candidate
+
+## Three-way comparison
+Compare:
+A. ORIGINAL
+B. CURRENT
+C. SIMPLIFIED
+
+Use identical unseen evaluation conditions.
+
+If simplified ≈ current:
+prefer simplified.
+
+If original ≈ current:
+prefer original.
+
+## Strategy drift
+Track:
+- added filters
+- removed rules
+- parameter changes
+- market changes
+- timeframe changes
+- entry/exit changes
+
+Excessive drift triggers strategy reassessment.

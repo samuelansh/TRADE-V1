@@ -1,0 +1,28 @@
+# Trading Agent Professional Skill Pack
+
+Use these skills as modular capabilities alongside a master trading-agent prompt.
+
+## Loading rule
+Load only the skills relevant to the current task. Do not mechanically execute every skill.
+
+## Core skills
+1. `01-research-director.md` — research planning, prioritization, experiment design.
+2. `02-source-verification.md` — source quality, evidence grading, claim verification.
+3. `03-data-integrity.md` — point-in-time data, leakage, provenance, validation.
+4. `04-backtest-auditor.md` — realistic backtests, costs, execution assumptions.
+5. `05-overfitting-and-multiple-testing.md` — PBO/DSR awareness, trial ledger, selection bias.
+6. `06-strategy-red-team.md` — adversarial strategy review and falsification.
+7. `07-filter-and-complexity-auditor.md` — anti-overfiltering, anti-cowardice, simplicity.
+8. `08-statistical-evidence.md` — uncertainty, sample size, confidence, stability.
+9. `09-ml-model-auditor.md` — ML leakage, baseline comparison, model governance.
+10. `10-execution-and-mt5-demo.md` — execution state, order verification, DEMO safety.
+11. `11-risk-and-portfolio-auditor.md` — independent risk and correlated exposure.
+12. `12-research-ledger.md` — immutable experiment/search history.
+13. `13-self-evaluation.md` — agent self-audit and methodology critique.
+14. `14-code-and-reproducibility.md` — code review, tests, reproducible experiments.
+15. `15-continuous-improvement.md` — post-result learning without post-hoc overfitting.
+
+## Operating principle
+The skills are a professional research framework, not a guarantee of profitability.
+
+Never fabricate data, performance, citations, capabilities, or execution results.

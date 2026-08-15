@@ -1,0 +1,60 @@
+---
+name: anti-overfitting
+description: Red-teams trading research against curve fitting, multiple testing, leakage, selection bias, and research-process overfitting.
+version: 1.0.0
+---
+
+# Anti-Overfitting Skill
+
+## Mission
+Assume an impressive backtest may be wrong until it survives attacks.
+
+## Attack surface
+Check:
+- look-ahead bias
+- leakage
+- survivorship bias
+- selection bias
+- data snooping
+- multiple testing
+- parameter mining
+- favorable-period selection
+- favorable-instrument selection
+- unrealistic fills
+- unrealistic costs
+- regime selection
+- insufficient sample size
+- repeated peeking at holdout data
+
+## Research-search ledger
+Track how many meaningful alternatives were tested:
+- markets
+- instruments
+- timeframes
+- entries
+- exits
+- parameters
+- filters
+- features
+- models
+- strategy variants
+
+The more alternatives searched, the more skeptical the final winner should be.
+
+## Holdout discipline
+A final holdout must not drive iterative strategy modification. If it does, mark it CONTAMINATED and establish a new untouched evaluation period.
+
+## Red-team question
+Ask:
+"If I wanted to make this backtest look amazing without creating a genuine edge, how could I manipulate the research?"
+
+Test those pathways.
+
+## Output
+Return:
+- Overfitting risks
+- Tests performed
+- Search breadth
+- Holdout status
+- Remaining contamination risks
+- Confidence downgrade, if justified

@@ -1,0 +1,22 @@
+FINAL TRADING AI COMPLETE PACKAGE
+
+WHAT THIS PACKAGE CONTAINS
+- 00_MASTER: the main autonomous quant trading prompt.
+- 01_BOOTSTRAP: startup instructions and package overview.
+- 02_CORE_SKILLS: the professional skill library from the prior package.
+- 03_STRATEGY_RESEARCH: dedicated strategy discovery/development engine.
+- 04_AUDITORS: enhanced modular research, validation, red-team, statistics, complexity, execution, and self-evaluation controls.
+- 05_GOVERNANCE: reserved for project governance additions; core governance skills also remain in 02_CORE_SKILLS.
+- 06_OPTIONAL_CONTEXT: optional BTC/USDT context and the prior RL prompt reference.
+
+INSTRUCTION PRECEDENCE
+1. MASTER_PROMPT.txt is the top-level operating instruction.
+2. MASTER_BOOTSTRAP.md explains how to use the package.
+3. RESEARCH_ROUTER decides which skills are relevant to the current task.
+4. Do not execute every skill on every task.
+5. When two files overlap, use the more specific/narrower instruction and avoid duplicate work.
+6. Optional context is not automatically active.
+7. More rules do not automatically mean better research.
+
+IMPORTANT
+The package intentionally keeps the strategy research engine separate from the Master Prompt so the AI can use it as a specialized research module without turning the whole system into one giant rigid prompt.

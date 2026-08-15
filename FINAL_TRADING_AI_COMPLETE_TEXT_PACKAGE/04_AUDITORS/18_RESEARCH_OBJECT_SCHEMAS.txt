@@ -1,0 +1,56 @@
+# STANDARD RESEARCH OBJECT SCHEMAS
+
+Use these conceptual schemas so different AI skills/agents communicate consistently.
+
+## Hypothesis
+ID
+Market
+Behavior
+Mechanism
+Prediction
+Horizon
+Conditions
+Expected direction
+Expected effect
+Falsification test
+Status
+
+## Experiment
+ID
+Hypothesis ID
+Question
+Dataset/version
+Train/validation/test split
+Variables
+Baseline
+Alternatives searched
+Predefined expectation
+Metrics
+Costs
+Result
+Decision
+
+## Strategy
+Strategy ID
+Version
+Strategy DNA
+Entry
+Exit
+Risk
+Sizing
+Execution
+Costs
+Constraints
+Validation state
+
+## Audit
+Audit type
+Scope
+Tests performed
+Failures
+Severity
+Uncertainty
+Recommendation
+Decision
+
+Do not invent fields merely to make reports longer.

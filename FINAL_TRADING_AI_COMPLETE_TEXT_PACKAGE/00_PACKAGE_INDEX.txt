@@ -1,0 +1,15 @@
+FINAL TRADING AI COMPLETE PACKAGE — INDEX
+
+1. 00_MASTER/MASTER_PROMPT.txt
+2. 01_BOOTSTRAP/MASTER_BOOTSTRAP.md
+3. 02_CORE_SKILLS/ — complete professional skill library
+4. 03_STRATEGY_RESEARCH/STRATEGY_RESEARCH_ENGINE.txt
+5. 04_AUDITORS/ — enhanced modular auditors and research controls
+6. 06_OPTIONAL_CONTEXT/BTC_USDT_CONTEXT_NOTE.md
+7. 06_OPTIONAL_CONTEXT/RL_PROMPT_REFERENCE.pdf
+8. UPLOAD_INSTRUCTIONS.txt
+
+Recommended upload:
+- If the target AI accepts folders/archives: upload the ZIP.
+- If it accepts multiple files: upload the whole package, but tell it to follow UPLOAD_INSTRUCTIONS.txt.
+- If it accepts only one text file: use the Master Prompt first and attach/import the relevant skills as needed; do not concatenate every file unless the platform explicitly supports a sufficiently large context.

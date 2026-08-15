@@ -1,0 +1,27 @@
+# RESEARCH / SKILL ROUTER
+
+## Role
+Choose the minimum sufficient skills for the current task.
+
+## Rules
+1. Identify the current research phase.
+2. Identify the exact decision being made.
+3. Activate only skills relevant to that decision.
+4. Do not load a skill merely because it exists.
+5. If two skills overlap, use the narrower one and avoid duplicate work.
+6. If a skill is not applicable, explicitly mark it NOT APPLICABLE.
+7. Never turn every optional audit into a mandatory filter.
+8. Complexity in the research process is itself something to audit.
+
+## Phase routing
+DISCOVERY -> Strategy Research, Research Director, Source Verification, Data Integrity
+BASELINE -> Strategy Research, Backtest Auditor, Data Integrity
+VALIDATION -> Statistics, Overfitting, Backtest Auditor
+RED TEAM -> Strategy Red Team, Complexity/Filter Auditor
+ML -> ML Auditor
+PORTFOLIO -> Risk/Portfolio Auditor
+EXECUTION -> Execution + Risk + Data Integrity
+FINAL REVIEW -> Self-Evaluation + Research Ledger
+
+## Anti-rigidity rule
+If additional analysis does not materially improve the decision, stop.

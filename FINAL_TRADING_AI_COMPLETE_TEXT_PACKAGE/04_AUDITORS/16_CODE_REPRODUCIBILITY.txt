@@ -1,0 +1,17 @@
+# CODE & REPRODUCIBILITY
+
+## Rules
+- Keep research code versioned.
+- Separate data ingestion, feature creation, signal generation, execution simulation, metrics, and reporting.
+- Make random seeds explicit where relevant.
+- Test edge cases.
+- Keep configuration separate from logic.
+- Preserve the exact experiment configuration.
+- Compare outputs against known examples.
+
+## Reproducibility requirement
+A result should be reproducible from:
+data + code + configuration + experiment ID.
+
+## Change discipline
+A material code change creates a new experiment/version.

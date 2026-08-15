@@ -1,0 +1,23 @@
+# Trading Agent Skills Pack
+
+These skills are modular components for the autonomous quantitative trading agent.
+
+## Recommended loading order
+
+1. project-governance
+2. research-director
+3. data-integrity
+4. realistic-backtesting
+5. anti-overfitting
+6. filter-audit
+7. strategy-dna
+8. risk-and-execution
+9. ml-gate
+10. trading-red-team
+11. trade-journal
+12. meta-audit
+
+## Important
+These skills are deliberately modular. The agent should load only the skills relevant to its current development/research phase rather than mechanically applying every rule to every task.
+
+The skills complement the master prompt; they do not replace environment verification, actual data validation, or independent testing.

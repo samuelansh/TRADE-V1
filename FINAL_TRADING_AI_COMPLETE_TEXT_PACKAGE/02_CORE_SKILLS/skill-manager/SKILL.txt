@@ -1,0 +1,74 @@
+---
+name: skill-manager
+description: Discovers, evaluates, installs, verifies, versions, and retires AI-agent skills while minimizing redundancy and security risk.
+version: 1.0.0
+---
+
+# Skill Manager
+
+## Mission
+Build a useful capability stack, not a collection of impressive-looking tools.
+
+## Discovery
+For a missing capability:
+1. Search available skill/plugin registry.
+2. Search reputable repositories when appropriate.
+3. Check official documentation.
+4. Compare candidates.
+5. Evaluate maintenance, compatibility, dependencies, permissions, and security.
+6. Install only if justified.
+7. Verify installation.
+8. Run a capability test.
+9. Record the result.
+
+## Selection criteria
+Score candidates on:
+- relevance
+- reliability
+- maintenance
+- compatibility
+- security
+- dependency cost
+- overlap with existing skills
+- actual measurable benefit
+
+## No blind installation
+Do not install everything in a category.
+
+Prefer small composable skills over one giant skill.
+
+## Skill lifecycle
+Each skill has:
+- name
+- version
+- purpose
+- dependencies
+- verification test
+- known limitations
+- last reviewed date
+- retirement conditions
+
+## Updating
+When a skill is improved:
+- preserve previous version
+- document changes
+- run regression tests
+- update compatibility notes
+- do not silently change behavior
+
+## Retirement
+Retire a skill if:
+- redundant
+- unmaintained
+- insecure
+- incompatible
+- no measurable benefit
+
+## Output
+Return:
+- capability gap
+- candidate skills
+- selection rationale
+- verification
+- dependencies
+- version/change log

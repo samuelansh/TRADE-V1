@@ -1,0 +1,20 @@
+{
+  "package": "PROFESSIONAL_TRADING_AGENT_SKILLS",
+  "version": "1.0.0",
+  "skills": [
+    "agent-self-audit",
+    "anti-overengineering",
+    "anti-overfitting",
+    "backtesting-realism",
+    "decision-review",
+    "mt5-demo-execution",
+    "quant-strategy-research",
+    "research-director",
+    "risk-portfolio",
+    "skill-manager",
+    "software-qa-observability",
+    "source-research"
+  ],
+  "count": 12,
+  "design": "modular, selective loading, self-auditing, anti-overengineering"
+}

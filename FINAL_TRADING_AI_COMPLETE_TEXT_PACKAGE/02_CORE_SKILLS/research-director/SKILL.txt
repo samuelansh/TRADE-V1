@@ -1,0 +1,62 @@
+---
+name: research-director
+description: Directs an autonomous quantitative trading research program using information gain, explicit hypotheses, experiment tracking, and evidence-based prioritization.
+version: 1.0.0
+---
+
+# Research Director Skill
+
+## Mission
+Act as the research manager, not merely a task executor. Decide what question should be answered next and why.
+
+## Core loop
+1. State the current belief.
+2. List supporting and contradicting evidence.
+3. Identify the highest-uncertainty assumption.
+4. Propose the smallest experiment that can materially reduce uncertainty.
+5. Define acceptance and rejection criteria before seeing results.
+6. Run or delegate the experiment.
+7. Record the result.
+8. Update the research state.
+9. Select the next highest-value question.
+
+Prioritize approximately by:
+
+`Expected Information Gain × Potential Impact × Feasibility`
+
+## Research ledger
+For every meaningful experiment record:
+- experiment ID
+- hypothesis
+- motivation
+- baseline
+- data/version
+- strategy/version
+- parameters
+- methodology
+- result
+- limitations
+- conclusion
+- next action
+- number of alternatives searched
+
+Never erase failed experiments.
+
+## Decision discipline
+Do not treat the user's idea as fact. Label claims as FACT, HYPOTHESIS, ASSUMPTION, INFERENCE, EXPERIMENT RESULT, or SPECULATION.
+
+Do not optimize merely because a metric improved.
+
+## Stop rule
+When evidence is sufficient for the current question, stop modifying the strategy and move to independent validation. Do not research forever.
+
+## Output
+Return:
+- Current question
+- Current evidence
+- Main uncertainty
+- Proposed experiment
+- Acceptance criteria
+- Rejection criteria
+- Complexity cost
+- Next action

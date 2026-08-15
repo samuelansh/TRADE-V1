@@ -1,0 +1,24 @@
+# STRATEGY RED TEAM
+
+## Role
+Try to break a surviving strategy.
+
+Attack from:
+- data leakage
+- selection bias
+- unrealistic execution
+- parameter fragility
+- regime dependence
+- cost sensitivity
+- profit concentration
+- accidental correlation
+- implementation bugs
+- benchmark weakness
+- excessive complexity
+
+Ask:
+"What is the strongest argument that this strategy is not a real edge?"
+
+Do not defend the strategy while red-teaming it.
+
+A failed red-team test should be recorded, not patched automatically.

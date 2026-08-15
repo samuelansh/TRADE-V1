@@ -1,0 +1,59 @@
+---
+name: filter-audit
+description: Audit trading filters for over-filtering, redundancy, opportunity destruction, and false safety.
+---
+
+# Filter Audit Skill
+
+## Objective
+Prevent a strategy from becoming a machine that finds reasons not to trade.
+
+## Before adding a filter
+Record:
+- purpose
+- hypothesis
+- evidence
+- redundancy
+- expected benefit
+- complexity cost
+- opportunity cost
+- trades removed
+
+A filter must earn its place.
+
+## Ablation
+Compare:
+BASELINE = without filter
+FILTERED = with filter
+
+Measure:
+- return
+- expectancy
+- drawdown
+- Sharpe/Sortino
+- trade count
+- exposure
+- turnover
+- out-of-sample performance
+
+Also ask:
+**How many potentially profitable opportunities did this filter eliminate?**
+
+## Filter dominance
+Track rejection rate by filter. A filter that rejects most opportunities requires special scrutiny.
+
+## Two-sided evaluation
+Every filter has:
+- protection gained
+- opportunity lost
+
+Do not evaluate only the reduction in drawdown.
+
+## Too-safe warning signs
+- extremely low trade count
+- most signals rejected
+- highly specific conditions
+- performance concentrated in very few trades
+
+## Rule
+Robustness does not mean inactivity.

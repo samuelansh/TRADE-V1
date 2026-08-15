@@ -1,0 +1,38 @@
+# Skill: Data Integrity & Point-in-Time Discipline
+
+## Purpose
+Protect the research pipeline from data errors and leakage.
+
+## Validate
+- timestamps
+- timezone
+- missing observations
+- duplicates
+- gaps
+- outliers
+- symbol changes
+- bid/ask consistency
+- corporate actions where applicable
+- session boundaries
+- volume semantics
+- source provenance
+
+## Point-in-time rule
+At decision time t, a feature may use only information that would genuinely have been available at or before t.
+
+Audit:
+- look-ahead
+- target leakage
+- future normalization
+- train/test contamination
+- survivorship bias
+- revised data
+- timestamp alignment
+- overlapping labels
+
+## Provenance
+Every dataset should have:
+source, collection time, instrument universe, timeframe, transformations, version, and known limitations.
+
+If data integrity is uncertain:
+DO NOT TRUST THE BACKTEST.

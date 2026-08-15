@@ -1,0 +1,30 @@
+# DATA INTEGRITY
+
+## Role
+Ensure research uses information that would actually have been available at decision time.
+
+Audit:
+- timestamps
+- timezone handling
+- missing data
+- duplicated data
+- symbol definitions
+- corporate/contract adjustments where relevant
+- revisions
+- exchange/source differences
+- bid/ask vs last-price assumptions
+- look-ahead leakage
+- survivorship effects where applicable
+- train/test contamination
+
+## Point-in-time rule
+A feature is valid only if its information was available before the simulated decision.
+
+## Reproducibility
+Record:
+- data source
+- retrieval date
+- dataset/version where possible
+- transformations
+- exclusions
+- preprocessing

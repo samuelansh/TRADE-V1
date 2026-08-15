@@ -1,0 +1,36 @@
+# FINAL STRATEGY RESEARCH CHECKLIST
+
+Before a strategy is treated as a serious candidate:
+
+[ ] Clear hypothesis
+[ ] Plausible mechanism, explicitly labeled as hypothesis
+[ ] Simple baseline tested
+[ ] Search breadth recorded
+[ ] Data leakage audited
+[ ] Backtester validated
+[ ] Realistic costs included
+[ ] Slippage/spread sensitivity tested
+[ ] OOS or walk-forward validation performed
+[ ] Holdout contamination checked
+[ ] Parameter stability checked
+[ ] Filters ablated
+[ ] Profit concentration checked
+[ ] Regime behavior checked where relevant
+[ ] Complexity challenged
+[ ] Red-team completed
+[ ] Reproducibility verified
+[ ] Risk assessed
+[ ] Portfolio contribution assessed if applicable
+[ ] Research ledger updated
+[ ] Strongest counterargument documented
+[ ] Decision explicitly stated
+
+## Final decision options
+REJECT
+NEEDS MORE RESEARCH
+SIMPLIFY
+FROZEN
+CONTROLLED FORWARD
+DEPLOYMENT-ELIGIBLE
+
+Never use "deployment-eligible" as a synonym for "guaranteed profitable."

@@ -1,0 +1,31 @@
+# BACKTEST AUDITOR
+
+## Role
+Attack the realism of the simulation.
+
+Check:
+- order timing
+- next-bar assumptions
+- spread
+- commission
+- slippage
+- partial fills where relevant
+- liquidity
+- market/limit/stop behavior
+- position sizing
+- leverage
+- funding/financing where applicable
+- unavailable prices
+- latency
+- gaps
+- exchange/broker constraints
+
+## Backtester validation
+Before trusting a complex result, validate the backtester using simple scenarios with known expected outcomes.
+
+## Stress tests
+Run reasonable cost/execution scenarios.
+Report the threshold at which the strategy's expected value becomes unacceptable.
+
+## Rule
+A strategy requiring unrealistic execution is not a robust strategy.
